@@ -1,0 +1,18 @@
+<svg version="1.2" baseProfile="tiny" id="EdgeSVG_kTsli" x="0px" y="0px" width="66px" height="45px" viewBox="0 0 66 45" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="33" y1="23" x2="33" y2="1">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.5"/>
+    <stop offset="0.05" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="0.5" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="0.95" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.5"/>
+  </linearGradient>
+  <path fill="url(#SVGID_2_)" d="M0,1v22h22c0.001-0.002,7.356-10.977,10.978-10.977C36.601,12.023,44,22.999,44,22.999V23l0,0h22V1&#xD;&#xA;&#x9;&#x9;H0z"/>
+  <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="22" y1="28.5117" x2="44" y2="28.5117">
+    <stop offset="0" style="stop-color:#000000;stop-opacity:0.5"/>
+    <stop offset="0.05" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="0.5" style="stop-color:#000000;stop-opacity:0"/>
+    <stop offset="0.95" style="stop-color:#000000;stop-opacity:0.4"/>
+    <stop offset="1" style="stop-color:#000000;stop-opacity:0.5"/>
+  </linearGradient>
+  <path fill="url(#SVGID_3_)" d="M44,22.999c0,0-7.399-10.976-11.022-10.976C29.356,12.023,22.001,22.998,22,23l0,0v22h22V22.999&#xD;&#xA;&#x9;&#x9;L44,22.999z"/>
+</svg>

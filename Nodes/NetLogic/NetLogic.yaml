@@ -1,0 +1,44 @@
+Name: NetLogic
+Id: g=d21aa96a826f23691dced6978d1c08ab
+Type: NetLogicCategoryFolder
+Children:
+- Name: AuditLogic
+  Id: g=8fd4962d64797a7cce62722026f2b3c8
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: InsertRow
+    Id: g=e9ceaa2a92b5a6363ec747e2149dfe50
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=135c0b1ed20d428219deeec180965501
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"recipeName","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"recipeAction","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: CreateEmptyVersion
+  Id: g=0b4e83d164d55497b8d70b313050aa40
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=62f0f27e6854e04107470989bbc19f6c
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: PrepareEmptyVersion
+    Id: g=83c8b3ebc6c59f0444a07e7443f0ff9e
+- Name: DemonstrationScript
+  Id: g=22f3972e8df705e7155ce8f54b9ba405
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=be83f5b7cf8337876d3c617deea74bed
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: Demo
+    Id: g=568acf710bb361be9367aba8d47bc911

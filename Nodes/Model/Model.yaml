@@ -1,0 +1,6 @@
+Name: Model
+Id: g=4a1c6beca5bea3fedb4e09a48482ad13
+Type: ModelCategoryFolder
+Children:
+- File: Recipes/Recipes.yaml
+- File: DataMosaix/DataMosaix.yaml

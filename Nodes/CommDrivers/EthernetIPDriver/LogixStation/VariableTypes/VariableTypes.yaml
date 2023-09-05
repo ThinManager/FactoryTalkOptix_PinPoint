@@ -1,0 +1,92 @@
+Name: ns=33;VariableTypes
+Id: g=81a0a21fa3cd856070a1339dee2fa988
+Type: FolderType
+Children:
+- Name: TankUDT1
+  Id: g=4ecfef4a5386ee2faa4699255e9d9d23
+  Supertype: TagStructure
+  DataType: TankUDT1
+  ValueRank: Any
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "6f388bf78a18bb87793cee6f7df00aec",
+     "Namespace": 40
+    },
+    "Body": {
+     "ValveInStatus": false,
+     "ValveInCmd": false,
+     "ValveOutStatus": false,
+     "ValveOutCmd": false,
+     "Level": 0.0,
+     "SetPoint": 0.0
+    }
+   }
+  Children:
+  - Name: ValveInStatus
+    Id: g=8988cbbf497f9593ca4511356ed3f557
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=f642f4e0b60f57194d344e7b7350f635
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValveInStatus"
+  - Name: ValveInCmd
+    Id: g=ebebebed04c1ed6f577e58100a122ae0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=6658bbaa6964d360f7bff637906970a8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValveInCmd"
+  - Name: ValveOutStatus
+    Id: g=a915a3b41f0493bfdff16ff1d8b90a9c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=913f17fd61c247e3be6ce0798f1f4987
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValveOutStatus"
+  - Name: ValveOutCmd
+    Id: g=774a02ad74edc3237d447b3ff5d16433
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=15f2e2d4f0f3a2a648135cafb33c4a77
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValveOutCmd"
+  - Name: Level
+    Id: g=c3f38436bd2da8ce7d3bcfc6dc5436fe
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=19121c9b584ca88f048bfecf67eaee02
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Level"
+  - Name: SetPoint
+    Id: g=3ada4e617461c644747106c5d798db68
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=83779ada5d2f89daba8bdb012f760260
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SetPoint"

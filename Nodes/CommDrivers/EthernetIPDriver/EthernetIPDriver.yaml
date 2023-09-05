@@ -1,0 +1,5 @@
+Name: EthernetIPDriver
+Id: g=aa2d36839349e575607d036d0d90da3f
+Type: RAEtherNetIPDriver
+Children:
+- File: LogixStation/LogixStation.yaml

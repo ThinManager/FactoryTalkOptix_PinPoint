@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\labuser\\Documents\\GitHub\\FactoryTalkOptix_PinPoint\\ProjectFiles\\NetSolution\\BoilerDemo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\labuser\\Documents\\GitHub\\FactoryTalkOptix_PinPoint\\ProjectFiles\\NetSolution\\BoilerDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\labuser\\Documents\\GitHub\\FactoryTalkOptix_PinPoint\\ProjectFiles\\NetSolution\\BoilerDemo.csproj",
+        "projectName": "BoilerDemo",
+        "projectPath": "C:\\Users\\labuser\\Documents\\GitHub\\FactoryTalkOptix_PinPoint\\ProjectFiles\\NetSolution\\BoilerDemo.csproj",
+        "packagesPath": "C:\\Users\\labuser\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\labuser\\Documents\\GitHub\\FactoryTalkOptix_PinPoint\\ProjectFiles\\NetSolution\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\labuser\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

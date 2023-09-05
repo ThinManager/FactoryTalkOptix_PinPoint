@@ -1,0 +1,72 @@
+Name: DataMosaix
+Id: g=b7d83ef52c39733579d9fd5855202486
+Type: FolderType
+Children:
+- Name: B2003.FillLevel
+  Id: g=dbbb318cdfbb73d0f0149a3b821e6698
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=4f7fcf1e0e146ac7c2b65e20e94b586c
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../OPC-UA/OPCUAClient/Objects/Demo/BoilerDemo/Boiler1/FillLevelSensor/FillLevel"
+    Children:
+    - Name: Mode
+      Id: g=718b6b97a12f664cc99df9e001903c8b
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: B2003.Temperature
+  Id: g=c77118b5a97d87b6a1d618663d0a3448
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=a6569201fb784e5866e234279d08c663
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../OPC-UA/OPCUAClient/Objects/Demo/BoilerDemo/Boiler1/TemperatureSensor/Temperature"
+    Children:
+    - Name: Mode
+      Id: g=3ced1523bd1efcd4a2675dd3794ccaba
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: T1001.Tank1.Level
+  Id: g=effce37d327a134f30f479af13da0f8c
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=5574d78e3d21e242b916164ed06eeaf4
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/LogixStation/Tags/Controller Tags/Tank1/Level"
+    Children:
+    - Name: Mode
+      Id: g=e34bd8de56ef1abdf560c1860db37f67
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: T1001.Tank2.Level
+  Id: g=df0568fdded82c52f11ec9add712f13c
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=7d2591ddbecee372966f2414e7ce86c1
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/EthernetIPDriver/LogixStation/Tags/Controller Tags/Tank2/Level"
+    Children:
+    - Name: Mode
+      Id: g=ed7662d4719b20d15a17f8deadb60d2f
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

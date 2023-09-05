@@ -1,0 +1,1890 @@
+Name: Graphic
+Id: g=5cff419cd38395646df455e5a03e9f47
+Type: FolderType
+Children:
+- Name: PipeStraight
+  Id: g=fa006125890127d665bea8449cc271ec
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=ce68dbadca5c2f1321eec18d3dca6f74
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#d0d2d3"
+  - Name: FlowColor
+    Id: g=4249500ee282fe0283db4a2f2e2f8514
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#26a9e0"
+  - Name: FlowOpacity
+    Id: g=f26256c55e7259f92aa3213b91a26de8
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 100.0
+  - Name: ShowFlow
+    Id: g=24045f8dd9bd3ef45fbc60c470add693
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Width
+    Id: g=235a68dcd5ecbd508b56a4f6101c0132
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 140.0
+  - Name: Height
+    Id: g=770d5ee249dc7f6fcf866699d305f2d0
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 13.0
+  - Name: Piping_x5F_Straight_x5F_Outline
+    Id: g=eb463a11e7d97f5f0342b2b93c9cc2fe
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=01ad4cf227f317ff38e87b21a36099f9
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: Height
+      Id: g=5bdebff07132150646dd9e02c7d4433f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 24.0
+    - Name: Path
+      Id: g=b7234097f59ba80dab249f0f010944a6
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Pipe_x5F_Straight_x5F_Outline.svg"
+    - Name: HorizontalAlignment
+      Id: g=1d48797e45909e657a5c81213ad64814
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=ca711ce2672730c1bb40e504a722bd1d
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: FillMode
+      Id: g=231056543fb1820fc999f5aca67652b3
+      Type: BaseDataVariableType
+      DataType: FillModeEnum
+      ModellingRule: Optional
+      Value: 1
+  - Name: Fill
+    Id: g=4b58d4df5496b98eee4dae036c1dcf77
+    Type: Rectangle
+    Children:
+    - Name: BorderColor
+      Id: g=4e10a220c9a09c2c62e0749a1996897b
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00000000"
+    - Name: BorderThickness
+      Id: g=2c81787a66a05714b7efc1473de30d73
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -1.0
+    - Name: LeftMargin
+      Id: g=f47a31665694af435570448a9cde142c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Id: g=6f28556a6837e9fce10c951d7ed2519f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0000799894332886
+    - Name: Width
+      Id: g=e70befae12121b403b97d322ed7cbd4a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: Height
+      Id: g=717b87f8c9c7de504fa7bd48a9693379
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 22.000080108642578
+    - Name: FillColor
+      Id: g=2d4f638efb024836eb12f335547ffba1
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#d0d2d3"
+      Children:
+      - Name: DynamicLink
+        Id: g=8feb0fe6da1f0ff10de6261da8f7b28b
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+    - Name: HorizontalAlignment
+      Id: g=fdb7c365d1f15cc88f364c66d0fac67e
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=ba07dd4ec716ffbe5ba8ea15cc80fe4d
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: flowScaleLayout
+    Id: g=40bbfb70990662f06ebc3a08ac3106f6
+    Type: ScaleLayout
+    Children:
+    - Name: Width
+      Id: g=1562b6da1d6d14d694841ad4476be755
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 160.0
+    - Name: Height
+      Id: g=7579da9c921afa683e19dea8278155d4
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Opacity
+      Id: g=92e48adb555b92e292a23ee9d3bc0ab1
+      Type: BaseVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: ConditionalConverter1
+        Id: g=c236ea8e8b9a2429ecbc1c962774d5a0
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Id: g=2e808332fe9c5e4133f0661f771b6104
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: ExpressionEvaluator1
+            Id: g=fbc4492d369985059e094d100eac7248
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Id: g=3bab6a02e27e58974f4631bc965a8ea4
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}"
+            - Name: ns=13;Source0
+              Id: g=0d560736d7b259ef93219fbf850578cd
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=8ea7653f80c5d97e36929505ca2bb207
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../ShowFlow"
+        - Name: TrueValue
+          Id: g=76077d943c655ed21176556cc0628b03
+          Type: BaseDataVariableType
+          DataType: Float
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: FalseValue
+          Id: g=9e9a06583196d3404041539aab92dd4c
+          Type: BaseDataVariableType
+          DataType: Float
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 0.0
+    - Name: FlowColorPE
+      Id: g=283f0e01948e652e5e22d2cd889f8ce1
+      Type: Image
+      Children:
+      - Name: Path
+        Id: g=622e99206d353cdb68f1322d3a23e3d4
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=40;%PROJECTDIR%/res/PipeStraight_FlowColorPE.svg"
+      - Name: Width
+        Id: g=d36a3369cd0af8e54b55c9c1644f3f06
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 130.0
+      - Name: Height
+        Id: g=691647a4f84a641d33abc0f18b7985e6
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: DynamicColor
+        Id: g=c4c074dacdd1a48ddc77a0e4d2b409be
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#26a9e0"
+        Children:
+        - Name: DynamicLink
+          Id: g=557a7debf10b5d5cb4dee0ab1b272ab3
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../FlowColor"
+      - Name: Opacity
+        Id: g=6021ad117c30ce6c344f7b87d6d9c23e
+        Type: BaseVariableType
+        DataType: Float
+        Value: 100.0
+        Children:
+        - Name: DynamicLink
+          Id: g=164e5a2a0fa91b35524b307eb6e9a704
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../FlowOpacity"
+      - Name: HorizontalAlignment
+        Id: g=a4ff242f7543393f91be406d842a418e
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Id: g=ff130edd7525f7b40307d1f81b1890ec
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: FillMode
+        Id: g=3cbc4ca67c0ac04a53b74f4b9b99df38
+        Type: BaseDataVariableType
+        DataType: FillModeEnum
+        ModellingRule: Optional
+        Value: 1
+    - Name: HorizontalAlignment
+      Id: g=79e43070d307b6757f3271130a9669b0
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=7a708f397f7fe48aeb42ef9e195f4400
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: FillMode
+      Id: g=bf6769ce05bfe0fd89a06cf53f99d4e4
+      Type: BaseDataVariableType
+      DataType: FillModeEnum
+      ModellingRule: Optional
+      Value: 1
+  - Name: Piping_x5F_Straight_x5F_Overlay
+    Id: g=ed12d949748376e0c44c7526ae55a05e
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=2f2b77a60a69b46c9eed2601241bd1cd
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: Height
+      Id: g=ed1ef41596cf84aff031d736b3507b68
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: Path
+      Id: g=3e9d46ea8c0d706c148ed1698087c43f
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Pipe_x5F_Straight_x5F_Overlay.svg"
+    - Name: FillMode
+      Id: g=569f98f1dbd40fafddc2213af426176b
+      Type: BaseDataVariableType
+      DataType: FillModeEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Id: g=e7489123cc00aaf3987728986ea349c7
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Id: g=a7ea106bd349edb3b8095c9a9bd2a9d5
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: FillMode
+    Id: g=b56ae716484eacdaf734d5436dc49d00
+    Type: BaseDataVariableType
+    DataType: FillModeEnum
+    ModellingRule: Optional
+    Value: 1
+  - Name: OriginalWidth
+    Id: g=e2eff2af0dcc35bf89ccda52c432fbcf
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 140.0
+  - Name: OriginalHeight
+    Id: g=7dc6e3cda8eee0709fbc88450d585505
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 13.0
+- Name: ValveSolenoid
+  Id: g=316ec35132b94324835d2dd2e1050f21
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=3dbe8554fc05738826abcaa9039bbcea
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#4d4d4d"
+  - Name: BodyColor
+    Id: g=1a156e4e55bc6997abe98fda9b48f030
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#cccccc"
+  - Name: Width
+    Id: g=b1ce54dd24d5787019dc58689ab7fafc
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 69.8030014038086
+  - Name: Height
+    Id: g=64a6561cd15f00da1850fdedffc64c7d
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 126.54499816894531
+  - Name: Solenoid_x5F_Valve_x5F_Outline
+    Id: g=eb30f385c1bf5cfd6520fb6ea4659979
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=d07313f1d4b51afa81ae1f4a4906d0a0
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 69.8030014038086
+    - Name: Height
+      Id: g=be37e196e11f8288ebf702851b129324
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 126.54499816894531
+    - Name: Path
+      Id: g=b8a2b11907d9b963129ce29885d305ac
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Solenoid_x5F_Valve_x5F_Outline.svg"
+  - Name: Body
+    Id: g=340d6ed022ece519496cd15d9fa9cbc8
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=28b161a5fdfd0470f592014a6c83b1ea
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/ValveSolenoid_Body.svg"
+    - Name: Width
+      Id: g=437b77022da5fd28ce362871fa1ee9ac
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 69.8030014038086
+    - Name: Height
+      Id: g=bf12352af589d10e1cf6c721468fe3a5
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 126.54499816894531
+    - Name: DynamicColor
+      Id: g=b3d4a6869c492578c4802cd6841357c9
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#cccccc"
+      Children:
+      - Name: DynamicLink
+        Id: g=3db0afadd806ebdff2c153fea7301069
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../BodyColor"
+  - Name: Fill
+    Id: g=0301f53777aa47c87e2e223df7f7bfec
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=605611daa26dd94fd4261afe07e599e0
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/ValveSolenoid_Fill.svg"
+    - Name: Width
+      Id: g=74236b6356c82dc25e0dd4a8eba83af0
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 69.8030014038086
+    - Name: Height
+      Id: g=4ee8d48812380673dafce327891b7b59
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 126.54499816894531
+    - Name: DynamicColor
+      Id: g=fc5cdc0a6d359bce8eece64ed73bd3ad
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#4d4d4d"
+      Children:
+      - Name: DynamicLink
+        Id: g=02bb0fb2aefc9f66c780f07afb15a779
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+  - Name: Solenoid_x5F_Valve_x5F_Overlay
+    Id: g=b8d173b1d9f9474f1b40b9fb31904aae
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=513e5592673083041f8df6d9409909ca
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 69.8030014038086
+    - Name: Height
+      Id: g=8a948bd1a32ceec22fa2db0ab64d2411
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 126.54499816894531
+    - Name: Path
+      Id: g=2a2cf0bc5459be72fc5be827e045dd26
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Solenoid_x5F_Valve_x5F_Overlay.svg"
+  - Name: OriginalWidth
+    Id: g=9d1f8994eff935c6556206a1eb8029e7
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 69.8030014038086
+  - Name: OriginalHeight
+    Id: g=b647d8b1159b53f473a42c9e76a9fd2f
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 126.54499816894531
+- Name: Tank
+  Id: g=9617749f37fb4b93b8641d056d90659b
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=0927d80846acb36f35ed925c6dabeec4
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#bbbdbf"
+  - Name: LevelColor
+    Id: g=766c51304d334d3d7cd6013e60923a4f
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00adee"
+  - Name: Level
+    Id: g=2435535d5319fda67e85cf0052398f7b
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: MinLevel
+    Id: g=1415a89defb6a0e59fe5c2546798361f
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: MaxLevel
+    Id: g=c36aca452225f2c5dac42af9c6d45737
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Width
+    Id: g=a4a5ab1e3379aae94859b61ac4a70ad9
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 124.4990005493164
+  - Name: Height
+    Id: g=de4377486075117175ffcc4a216d4b18
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 200.0
+  - Name: Equipment_x5F_Vessel_x5F_Outline
+    Id: g=b4b8208e158ebdd42939053de3fff572
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=4bad684be734f26f33dbc4bd98e7f520
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 124.4990005493164
+    - Name: Height
+      Id: g=acdcff2644205ec09512a3ab4891d554
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: Path
+      Id: g=5e0a40b338cd0f05170505bd35a1e53e
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Equipment_x5F_Tank_x5F_Outline.svg"
+  - Name: vessel_fill
+    Id: g=2dc1440abaa58efedb4e83e82c66f9c7
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=3e5916aeafae6e725315915fbd6db2cb
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Tank_vessel_fill.svg"
+    - Name: Width
+      Id: g=d954082e1318357a60bc52063a48811b
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 124.4990005493164
+    - Name: Height
+      Id: g=e92f0fb6b6c61ae51bd816703f709a72
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: DynamicColor
+      Id: g=c1d32ccbfb73d170b0355078590ab2b9
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#bbbdbf"
+      Children:
+      - Name: DynamicLink
+        Id: g=abd6922ce96a26bd3e4e006c53cd4c7f
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+  - Name: Tank_vessel_level
+    Id: g=45f3132e580c26b06b5710947b186739
+    Type: LinearGauge
+    Children:
+    - Name: Value
+      Id: g=241fcb6ee56223009717648147d23058
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 70.0
+      Children:
+      - Name: DynamicLink
+        Id: g=646d72db1c1a8077a730e57c8791d22d
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Level"
+    - Name: MinValue
+      Id: g=c8a7fad2338dfa3895a84038164e0ae4
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=14f547269cea752e64113ad9c5761040
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../MinLevel"
+    - Name: MaxValue
+      Id: g=ffdf95102d5c750e3781806fe6801cd9
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: DynamicLink
+        Id: g=6caf5ede330479f379cccb587accfc6d
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../MaxLevel"
+    - Name: WarningZones
+      Id: g=0b77205f82cd9c70652f3a49fae10968
+      Type: BaseObjectType
+    - Name: Width
+      Id: g=0e632f7059ad6dba61372492c237bf7d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 119.61799621582031
+    - Name: Height
+      Id: g=7d3b87511d3eb7afbf6da29caa08bdf2
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 195.2729949951172
+    - Name: MajorTickCount
+      Id: g=7ca4dc2ec7a19914c2b9872770cae3ec
+      Type: BaseDataVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Orientation
+      Id: g=230b07550ba17d9bb8900751dcb57e0b
+      Type: BaseDataVariableType
+      DataType: OrientationEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: ImagePath
+      Id: g=df508ffd8c4fd2e2734d9f554a7482dd
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      ModellingRule: Optional
+      Value: "ns=40;%PROJECTDIR%/res/Tank_LinearGauge_vessel_level.svg"
+    - Name: FillColor
+      Id: g=6875d70ffd3e2bcd9872eb168434d76b
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00adee"
+      Children:
+      - Name: DynamicLink
+        Id: g=e094b77f6004423de20101eaba2828dc
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../LevelColor"
+    - Name: ValueChangeBehaviour
+      Id: g=7da20517de9450ec05023e271e022e67
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+    - Name: LeftMargin
+      Id: g=256b3255155c97657f4100c242476374
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 2.4407999515533447
+    - Name: TopMargin
+      Id: g=a96e0e6893ae5f85522d16b9814d9698
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 2.361599922180176
+  - Name: Equipment_x5F_Vessel_x5F_Overlay
+    Id: g=0990b93147c41b8153448e69d093c59a
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=b113cd73c62e87ab5f6d11040437c95f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 124.4990005493164
+    - Name: Height
+      Id: g=9cb70b4dc0a82740c784af545f9f4afe
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: Path
+      Id: g=8217ab1a42de887505533c34feee9f64
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Equipment_x5F_Tank_x5F_Overlay.svg"
+  - Name: OriginalWidth
+    Id: g=d2695911b4153f1090f6175f0258e698
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 124.4990005493164
+  - Name: OriginalHeight
+    Id: g=9e590cc1ef3070e3e0049f23b562f85a
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 200.0
+- Name: PipeFlange
+  Id: g=7a5dfc0d106643908d7c66b50e80d8c5
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=00d85b57fed98425cfbfd64769ab4be8
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#d0d2d3"
+  - Name: Width
+    Id: g=45198b1905f22d70d20d0019dddb24d2
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 13.369000434875488
+  - Name: Height
+    Id: g=9c61058e789258c2e5e75ed071b1ec3c
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 41.35300064086914
+  - Name: Pipe_x5F_Flange_x5F_Outline
+    Id: g=300d9d68b17b7f493513ab2564db755b
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=f07ad50e9ff11624dbe253ee1e74ad6c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 13.369000434875488
+    - Name: Height
+      Id: g=4b1fd79e2527c6d6c44d03e6644cd7e1
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 41.35300064086914
+    - Name: Path
+      Id: g=d563436add87bb49a5dcd17f62933c75
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Pipe_x5F_Flange_x5F_Outline.svg"
+  - Name: Fill
+    Id: g=0749a78ada8e62de84a7f5a9ae980fb5
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=3349240ff56f27632074794e9f609b6e
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/PipeFlange_Fill.svg"
+    - Name: Width
+      Id: g=fd0cb46236f0a34f499e3f951975172d
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 13.369000434875488
+    - Name: Height
+      Id: g=a7642aa08f8d32e8244bd5b92116cd7e
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 41.35300064086914
+    - Name: DynamicColor
+      Id: g=866a6ac6636a7f49f07b0e9e31238e74
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#d0d2d3"
+      Children:
+      - Name: DynamicLink
+        Id: g=b72f3a80f649ac8259394cfd0439de0e
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+  - Name: Pipe_x5F_Flange_x5F_Overlay
+    Id: g=15668d8a691074e5c286fdc8c416c0d7
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=81f0b5456ecdf756a9afd9311b82bb98
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 13.369000434875488
+    - Name: Height
+      Id: g=30f36fa306c4d763888f2d40d46acab8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 41.35300064086914
+    - Name: Path
+      Id: g=d84c57126b49b07fe902ce08a39c579f
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Pipe_x5F_Flange_x5F_Overlay.svg"
+  - Name: OriginalWidth
+    Id: g=11fabb7b0c020ba2dde5c233dd254397
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 13.369000434875488
+  - Name: OriginalHeight
+    Id: g=8af3af495d37034dbe8235c5860f0cf3
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 41.35300064086914
+- Name: Pipe90Degree
+  Id: g=76398dfd1ca24d70b848bc3bf0f42b06
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=a203b7ecd36f1b6f2f63c8a81c8aaa9e
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#d0d2d3"
+  - Name: FlowColor
+    Id: g=2e3717f9945e9aec396dfafb62822797
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#26a9e0"
+  - Name: FlowOpacity
+    Id: g=c5f764c4a05063a14d8200526a611038
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 100.0
+  - Name: ShowFlow
+    Id: g=8231ffa7c32783ed025799623cb27e34
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Width
+    Id: g=ce04e2e98464b310c9137eb6df0e9ff4
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 65.99800109863281
+  - Name: Height
+    Id: g=6edc91a4a03184ebea5f1d33113440f4
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 66.0
+  - Name: Pipe_x5F_90_x5F_Degree_x5F_Outline
+    Id: g=c8d201eaebb3b6979dc88c325dd30676
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=a2b397d552637abdc15c228eeb177bbb
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 65.99800109863281
+    - Name: Height
+      Id: g=c9a6a689c2b79728ca25d392412e83cd
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: Path
+      Id: g=2c84e26a029155c26f881b0abbbf110a
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Pipe_x5F_90_x5F_Degree_x5F_Outline.svg"
+  - Name: Fill
+    Id: g=f18cd1ba8a23cd2899e902fe866efce6
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=a51445ba353c1e0092765fee62eba7c4
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Pipe90Degree_Fill.svg"
+    - Name: Width
+      Id: g=c8a8b13da819936e51cd0c0eb88367d7
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 65.99800109863281
+    - Name: Height
+      Id: g=2bb455dbd3b3432cb95ddbbd7a96c571
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: DynamicColor
+      Id: g=e5add2b7041d5b18e73bebb13c5961e5
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#d0d2d3"
+      Children:
+      - Name: DynamicLink
+        Id: g=d6bbad1679a2aed5b252acf531b21d97
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+  - Name: FlowColorPEScaleLayout
+    Id: g=cdc52792667c9947374d5c2de750fe34
+    Type: ScaleLayout
+    Children:
+    - Name: Width
+      Id: g=7d4b5311195e7f9d514a736c78a1779f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 65.99800109863281
+    - Name: Height
+      Id: g=16b042646a11642fb247dba08508de1f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: Opacity
+      Id: g=0005c07087e82a480393982b5d6e08f5
+      Type: BaseVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: ConditionalConverter1
+        Id: g=5d3780a96d7f5af9887c4bfed3c2e089
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Id: g=4cf5bfd5cd09283c0ad76f985dd60bad
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: ExpressionEvaluator1
+            Id: g=1f569db170506e90d8a41483bdd4cc49
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Id: g=17d5e4b0a8d9e9abc1df5c5d57bfc448
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}"
+            - Name: ns=13;Source0
+              Id: g=34108042e28fa6e399bb8ad5d7b4089c
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=bf6fcb15036bb837d987b5023a26d4cd
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../ShowFlow"
+        - Name: TrueValue
+          Id: g=bc581f043817fcbe635327014f2c3b45
+          Type: BaseDataVariableType
+          DataType: Float
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: FalseValue
+          Id: g=5131b4a6e8ae6eef38ce27ac7d2a4e78
+          Type: BaseDataVariableType
+          DataType: Float
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 0.0
+    - Name: FlowColorPE
+      Id: g=de6d9256d5fe163a628f8ed0373ce3c5
+      Type: Image
+      Children:
+      - Name: Path
+        Id: g=ec7b64b0a1a2aabb31b1199d3ff42815
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=40;%PROJECTDIR%/res/Pipe90Degree_FlowColorPE.svg"
+      - Name: Width
+        Id: g=a3cc32833130107a98caf46aa8bec76e
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 66.0
+      - Name: Height
+        Id: g=783a370bf6d73d594ae01137fa65cb7f
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 66.0
+      - Name: DynamicColor
+        Id: g=ad875d52da287edb032657949623cc32
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#26a9e0"
+        Children:
+        - Name: DynamicLink
+          Id: g=1a2bf0e5870d9009a030e4013841cb44
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../FlowColor"
+      - Name: Opacity
+        Id: g=39884c65dd6110ca53faa7f8d2f99e09
+        Type: BaseVariableType
+        DataType: Float
+        Value: 100.0
+        Children:
+        - Name: DynamicLink
+          Id: g=3766df4de75a2cd59803518add65383f
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../FlowOpacity"
+    - Name: OriginalWidth
+      Id: g=ee7cab6f86c6b21b10db8d3200808c27
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: OriginalHeight
+      Id: g=08c1e574a7d12ad997871c0f06f2349b
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+  - Name: Pipe_x5F_90_x5F_Degree_x5F_Overlay
+    Id: g=c79b595210478cf3e187e83ea83dacf9
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=bbc0afc13bd1258da779ec79fcb0889b
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 65.99800109863281
+    - Name: Height
+      Id: g=1a27521dcb4f729ee3c619f4642996a8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: Path
+      Id: g=f7d28c4f76d2f0ba19be98ea7634277d
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Pipe_x5F_90_x5F_Degree_x5F_Overlay.svg"
+  - Name: OriginalWidth
+    Id: g=a4dddc113fc112820dee06718e28d95a
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 65.99800109863281
+  - Name: OriginalHeight
+    Id: g=8493e91bd23957678c995eb3992c9993
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 66.0
+- Name: PipeTConnector
+  Id: g=e0ec74b0e0af4cc392a0b4ff1c4f74ff
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=110b0ac68f6599d4e1464ad40bf92b71
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#d0d2d3"
+  - Name: FlowColor
+    Id: g=7af5787e6ac4287c095f96f1b77ba71e
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#26a9e0"
+  - Name: FlowOpacity
+    Id: g=8aa3ea4b6d0231912cee569e99acc341
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 100.0
+  - Name: ShowFlow
+    Id: g=afe7c63646af8209de02cde6bf153c33
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Width
+    Id: g=61ef0710e9713947ae17cb810f134114
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 66.0
+  - Name: Height
+    Id: g=deaf14faa1ddc3aa826ef19d641388f1
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 45.0
+  - Name: Pipe_x5F_T_x5F_Connector_x5F_Outline
+    Id: g=cd42d620c196a852b2e9e75881ba72f2
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=0bd3691fd6c8267beae7b74fbe82163a
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: Height
+      Id: g=a315c48781f642f24d2b6192a16d5575
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 45.0
+    - Name: Path
+      Id: g=b62d620cf5ba4742abe63d61bf4483eb
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Pipe_x5F_T_x5F_Connector_x5F_Outline.svg"
+  - Name: Fill
+    Id: g=5e53c30b9f8a657ff92691fd30708ee0
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=64b8ae9e5664887a7756adfd7fefeaf0
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/PipeTConnector_Fill.svg"
+    - Name: Width
+      Id: g=fa9368b43bd902b20fc39ad95272a4ae
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: Height
+      Id: g=28448a8bb5964fc15e8a98c4a19a63e1
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 45.0
+    - Name: DynamicColor
+      Id: g=a34bcf2dba997199cd33d3a9c16cd563
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#d0d2d3"
+      Children:
+      - Name: DynamicLink
+        Id: g=7c8ab04d01eee11e07900aca318403e8
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+  - Name: FlowColorPEScaleLayout
+    Id: g=0710ba0298105e188236aee8bffc3347
+    Type: ScaleLayout
+    Children:
+    - Name: Width
+      Id: g=bbc284725e905cc2946430d931033684
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: Height
+      Id: g=9d37b76ca6cf0000270e0a247086f05f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 45.0
+    - Name: Opacity
+      Id: g=720ed72c156c162f1e80f2cd123fe0ac
+      Type: BaseVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: ConditionalConverter1
+        Id: g=c7c788a350b8556f114cbad4afbca57b
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Id: g=a9d7cf4b968fcdca4e4b248801ddce03
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: ExpressionEvaluator1
+            Id: g=f2354685bfb18b92eb9ccd7425f26dac
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Id: g=cc60635dfdbc5c662ae3ca436fb476dd
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "{0}"
+            - Name: ns=13;Source0
+              Id: g=b52c38f4fe35b8f493ae8ff7ca8ee68b
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=87d106c7fac0c4112781e7bf30b224fe
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../ShowFlow"
+        - Name: TrueValue
+          Id: g=7d059d9038385913e9ae312ec0519824
+          Type: BaseDataVariableType
+          DataType: Float
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: FalseValue
+          Id: g=336a0d48476c4fff8bca5a9aa583a08d
+          Type: BaseDataVariableType
+          DataType: Float
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: 0.0
+    - Name: FlowColorPE
+      Id: g=211198a0549931be2d927b1b0f40efed
+      Type: Image
+      Children:
+      - Name: Path
+        Id: g=1993359bc751351f3f74f30652972485
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=40;%PROJECTDIR%/res/PipeTConnector_FlowColorPE.svg"
+      - Name: Width
+        Id: g=19da4407279106e4f2c8fac22f2c84fa
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 66.0
+      - Name: Height
+        Id: g=10ef8ecd161eba2129dbbe57daef3453
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 45.0
+      - Name: DynamicColor
+        Id: g=0b7c9e992faf780e81a20e3dc45bb207
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#26a9e0"
+        Children:
+        - Name: DynamicLink
+          Id: g=5c7a1e64c915b2f4073226af41265228
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../FlowColor"
+      - Name: Opacity
+        Id: g=e08f10d1cddbd6db4995cd362ccfdd15
+        Type: BaseVariableType
+        DataType: Float
+        Value: 100.0
+        Children:
+        - Name: DynamicLink
+          Id: g=81819660901caf5d3f75e21d362ad90e
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../FlowOpacity"
+    - Name: HorizontalAlignment
+      Id: g=34ffd50d24932aa1eff7aedfc76e600d
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: VerticalAlignment
+      Id: g=479ba2570930d2a9bd2366b73435c358
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: OriginalWidth
+      Id: g=ad76ba5d2072668e2446badcf9574b0c
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: OriginalHeight
+      Id: g=eb6d7483005d294910ed000a57476405
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 45.0
+  - Name: Pipe_x5F_T_x5F_Connector_x5F_Overlay
+    Id: g=e584c8eb6a19c829d7784f209f7fbbb0
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=aac56d1232db23c3b6498b943dc70a26
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 66.0
+    - Name: Height
+      Id: g=4d2534ed68114bbc38a7e2beb679b8c3
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 45.0
+    - Name: Path
+      Id: g=b9214fb591e776a1d5926e7a8df3302a
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Pipe_x5F_T_x5F_Connector_x5F_Overlay.svg"
+  - Name: OriginalWidth
+    Id: g=f0b81e4faa5922c2e1002fe4395ec081
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 66.0
+  - Name: OriginalHeight
+    Id: g=c93d591efd94fccd46f24185f18d2cde
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 45.0
+- Name: Boiler
+  Id: g=ee09ac72b4bc47939f132c2c7c55de68
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: LevelColor
+    Id: g=242debe3a07e5947803017d61491227e
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#00adee"
+  - Name: FillColor
+    Id: g=3c39a8524a34cb24c1c1e66f4a380904
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#cccccc"
+  - Name: Level
+    Id: g=01bb31dae12119c61a1732118c2b2a7c
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: MinLevel
+    Id: g=8b4a5962273846ab1f5d36edc74dbbfb
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: MaxLevel
+    Id: g=48582689fce0af7eaad5d8b2d86cc36e
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 100.0
+  - Name: Width
+    Id: g=355e46d6665d696126d7b279d8694c32
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 240.5970001220703
+  - Name: Height
+    Id: g=b91d2ede8b7d1a999cd97d43d24737d6
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 173.61700439453125
+  - Name: Boiler_x5F_Outline
+    Id: g=35cad4dee0d51c8c90a16b0ba24b9a3b
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=c8b5ef4f4521e3a033fe01b5510eee14
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 240.5970001220703
+    - Name: Height
+      Id: g=d5c54100c226a6b2768c9c243b3d9c57
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 173.61700439453125
+    - Name: Path
+      Id: g=e4f348f4edc43221c57a683b64c50616
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Boiler_x5F_Outline.svg"
+  - Name: Fill
+    Id: g=cdf52fe361f3e1278d301a6424e1913c
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=abf146d5fabd03e45a595f78f13be239
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Boiler_Fill.svg"
+    - Name: Width
+      Id: g=317534e6df4d240837a324139df9e408
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 240.5970001220703
+    - Name: Height
+      Id: g=2f887a802378c52b7bed14daeeb1f004
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 173.61700439453125
+    - Name: DynamicColor
+      Id: g=64523d60331e461e722f83f2ce7b9e0d
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#cccccc"
+      Children:
+      - Name: DynamicLink
+        Id: g=8fb66595c8f00dd8b22c2472b01ef90a
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+  - Name: Boiler_bottlelevel
+    Id: g=ad40a4b1b716c2d6b71c3498bd5362e1
+    Type: LinearGauge
+    Children:
+    - Name: Value
+      Id: g=0841b2346a7be00027b5a3b1a59dbe50
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 70.0
+      Children:
+      - Name: DynamicLink
+        Id: g=9917ddf5a544e49e3ebd9bce040f1544
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Level"
+    - Name: MinValue
+      Id: g=87df7f19d8d8e70fbcbd13334b08cd2c
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=8c71d081346101686f6a3cbdbf130bb3
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../MinLevel"
+    - Name: MaxValue
+      Id: g=5b4fd0c55d9d98ed5a4db050f45abe76
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: DynamicLink
+        Id: g=da1fc343a45a7014a32775428f405463
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../MaxLevel"
+    - Name: WarningZones
+      Id: g=d2e955a297db110d994493b871c67bbf
+      Type: BaseObjectType
+    - Name: Width
+      Id: g=f6f7f6250ff90ca8b72a5927ad88fcc4
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 226.61000061035156
+    - Name: Height
+      Id: g=1897a62e5052d023d7c278305430634c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 95.75
+    - Name: MajorTickCount
+      Id: g=0b168d75da1cc6783cf8c93c3f08b57e
+      Type: BaseDataVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Orientation
+      Id: g=765a00e8881c3edfabcf08545df4e6c1
+      Type: BaseDataVariableType
+      DataType: OrientationEnum
+      ModellingRule: Optional
+      Value: 1
+    - Name: ImagePath
+      Id: g=36573bcdb24742d53678a8a5a0575ed2
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      ModellingRule: Optional
+      Value: "ns=40;%PROJECTDIR%/res/Boiler_LinearGauge_bottlelevel.svg"
+    - Name: FillColor
+      Id: g=db45d257cc5deaadc230213747c18a4e
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#00adee"
+      Children:
+      - Name: DynamicLink
+        Id: g=af903964fab8d94882209f49e4e22923
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../LevelColor"
+    - Name: ValueChangeBehaviour
+      Id: g=6b13e7db2386043e361f9765406bd6d0
+      Type: BaseDataVariableType
+      DataType: ValueChangeBehaviour
+      ModellingRule: Optional
+      Value: 1
+    - Name: LeftMargin
+      Id: g=bb89fdd44ef533f90893b3fcbddee039
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 8.723999977111816
+    - Name: TopMargin
+      Id: g=52881630feafb6a2851797c64d68ba69
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 56.95899963378906
+  - Name: Boiler_x5F_Overlay
+    Id: g=e4ca89548f7a997e50ab0069c1ae5b5e
+    Type: Image
+    Children:
+    - Name: Width
+      Id: g=a8947b353ce52e68995dad7f4741b94e
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 240.5970001220703
+    - Name: Height
+      Id: g=1a799c5f4ad9ae335570f77fe19894f2
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 173.61700439453125
+    - Name: Path
+      Id: g=fbbed21ee3218845251b04f77469d3cb
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Boiler_x5F_Overlay.svg"
+  - Name: OriginalWidth
+    Id: g=d522ddfa21bd6d6afd213575ab7ee3bf
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 240.5970001220703
+  - Name: OriginalHeight
+    Id: g=3e36488bd7eff02ed8a5759dd7717a1f
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 173.61700439453125
+- Name: Chevron
+  Id: g=4824f9f9d37546088f8b245da41ce72b
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=3c1981cefc7cfe658a43bc4244c38c53
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#d1d3d4"
+  - Name: Width
+    Id: g=b9b2e1866f9a09e1c72fa1ede6b30bce
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 18.0
+  - Name: Height
+    Id: g=46b0ef9ca52c3f0f2ad097c33f529c0f
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 17.974000930786133
+  - Name: shape
+    Id: g=1a1d1bed986a43526fe7c357a48410da
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=3ff9faeb38161d99159dde486dd7a3ae
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Chevron_shape.svg"
+    - Name: DynamicColor
+      Id: g=5a5b1a5fe531a61a5d8e8e81ff976248
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#d1d3d4"
+      Children:
+      - Name: DynamicLink
+        Id: g=fd9db2bb21697b443a7678a1514e7677
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+    - Name: Width
+      Id: g=141b8714c5eeb760a785b463d3a312f9
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: Height
+      Id: g=9436342f82c5e582eb2c56da3d80a17c
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 17.974000930786133
+  - Name: OriginalWidth
+    Id: g=18959620a1dd4615e69e6c7f02d004a8
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 18.0
+  - Name: OriginalHeight
+    Id: g=30b775552df1f7e125fa802df9955fd2
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 17.974000930786133
+- Name: Alarm_Medium_Priority
+  Id: g=1b7c52eeda43434dbbfd1cb734fcde88
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=80a6229555e694c29fcd2315394ecade
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#f5e119"
+  - Name: Width
+    Id: g=4b4d74c439a2f9deae99672a170d1dd6
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 14.0
+  - Name: Height
+    Id: g=f64e9ca43e42645db12d1387aca7885b
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 12.244000434875488
+  - Name: Icon_border
+    Id: g=24af339c049235413e4cb56aa39450be
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=a63164b9b92b2c4fb59b96648b2af48b
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/Alarm_Medium_Priority_Icon_border.svg"
+    - Name: DynamicColor
+      Id: g=4c59ed6dc88c50c6a94074310713b3e0
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#f5e119"
+      Children:
+      - Name: DynamicLink
+        Id: g=ad31e9956d7c3c13095d99d42efaffa2
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+    - Name: Width
+      Id: g=88b39c52bfb9cffa022f89ad441127af
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 14.0
+    - Name: Height
+      Id: g=c1ea96c4879b3aa81a29a42ee72b1dae
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 12.244000434875488
+  - Name: OriginalWidth
+    Id: g=7096a9b1c2b6d1fc8b1d5a1982dfd2f2
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 14.0
+  - Name: OriginalHeight
+    Id: g=6566b991655648bf0fee4e6a01110db5
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 12.244000434875488
+- Name: HotSurfaceSymbol2
+  Id: g=52490a9efa8b43bbacfc2c6ed12361dc
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=b10325fa7baacbf62a444c7a8a591d51
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#d1d3d4"
+  - Name: Width
+    Id: g=65f5f7ae98ae6ea81fa19d5269746ee3
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 17.207000732421875
+  - Name: Height
+    Id: g=91ac23f23f53b243a08fe59970b9e18a
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 18.0
+  - Name: fill
+    Id: g=3b8a3d4276cb228c4a6b7aebc525d6ab
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=39ee2bba64e398ffee13ac418efa6c58
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/HotSurfaceSymbol2_fill.svg"
+    - Name: Width
+      Id: g=06f993453add801f7c5d94021a7a5822
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 17.207000732421875
+    - Name: Height
+      Id: g=651b2cb7c3ac48ac8e4abd24faf4e498
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: DynamicColor
+      Id: g=bdb960be13ceb8c9899c9ecd7f7ce4d8
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#d1d3d4"
+      Children:
+      - Name: DynamicLink
+        Id: g=864b9bc80e12990420aa94bf0b288972
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+  - Name: OriginalWidth
+    Id: g=ff8616b057a3d31aac45af6f3c61820a
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 17.207000732421875
+  - Name: OriginalHeight
+    Id: g=6dbfd6d31e70e033c35a516941254953
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 18.0
+- Name: LowTemperatureSymbol
+  Id: g=5def5ff7421d4fdc9043e27001c40ea6
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=dd2c9fba41c414a6a80fd314528f9465
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#d1d3d4"
+  - Name: Width
+    Id: g=b97804d091b4cda0c719b59ec6970e06
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 15.835000038146973
+  - Name: Height
+    Id: g=925c5b556dcf2435f3ba8877516b655e
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 18.0
+  - Name: Fill
+    Id: g=a4b1d652145268c4a7ac90a1d59d0c3d
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=c10903995e04f2a2a0731ca1f3698539
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/LowTemperatureSymbol_Fill.svg"
+    - Name: Width
+      Id: g=cc8dd4dc5a828137bbdcadf3e024cbc6
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.835000038146973
+    - Name: Height
+      Id: g=f7829fe4a392532b87ff999ba7e244c8
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: DynamicColor
+      Id: g=00b0bcfd831ff25bba2acd855c9b385c
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#d1d3d4"
+      Children:
+      - Name: DynamicLink
+        Id: g=3cb9369edda6aea42cf18b317b83ed01
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+  - Name: OriginalWidth
+    Id: g=101b83f340676b953de807500223a1c7
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 15.835000038146973
+  - Name: OriginalHeight
+    Id: g=3c97afc05c5641665111fe096e02b1bf
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 18.0
+- Name: DoubleWave
+  Id: g=902a2674b8b0483d81998a82be8647d8
+  Supertype: ScaleLayout
+  ReferenceType: HasComponent
+  Children:
+  - Name: FillColor
+    Id: g=fae6a21056c288a5808f7837a44c568c
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#d1d3d4"
+  - Name: Width
+    Id: g=5c8f7f2e1db597ea73f1bfa2fd0e9827
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 18.0
+  - Name: Height
+    Id: g=928ba1e0daab4761d46c67fd6a276495
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 14.394000053405762
+  - Name: shape
+    Id: g=e0f66b222a42d8ab691381c8351d0eae
+    Type: Image
+    Children:
+    - Name: Path
+      Id: g=2a3c7e79f2bf0ff1439d0364aa506a4a
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=40;%PROJECTDIR%/res/DoubleWave_shape.svg"
+    - Name: DynamicColor
+      Id: g=22a39fcce7a06ccfda6c5ab62c89302f
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#d1d3d4"
+      Children:
+      - Name: DynamicLink
+        Id: g=ac871bace195db082b25c1f002ceaf28
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../FillColor"
+    - Name: Width
+      Id: g=aeb98fb6a0cb6b4fc62a60d9613cbd15
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 18.0
+    - Name: Height
+      Id: g=0e4ffb3c478716c31ff473d1e951f591
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 14.394000053405762
+  - Name: OriginalWidth
+    Id: g=37e0626d31a5380972e69e9a6a47edde
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 18.0
+  - Name: OriginalHeight
+    Id: g=0fb06b9b6be22bc9591ee659c1f66364
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 14.394000053405762

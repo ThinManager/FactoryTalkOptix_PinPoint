@@ -1,0 +1,62 @@
+Name: ns=33;DataTypes
+Id: g=15232998cc463c6d5f02d9229f6624eb
+Type: FolderType
+Children:
+- Class: DataType
+  Name: TankUDT1
+  Id: g=6f388bf78a18bb87793cee6f7df00aec
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "TankUDT1",
+    "DataType": {
+     "IdType": 2,
+     "Id": "6f388bf78a18bb87793cee6f7df00aec",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "ValveInStatus",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ValveInCmd",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ValveOutStatus",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ValveOutCmd",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Level",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "SetPoint",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"TankUDT1"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=d8e06cce9b04241334dfe00e89931601
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

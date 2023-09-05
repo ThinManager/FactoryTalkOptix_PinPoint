@@ -1,0 +1,91 @@
+Name: Recipes
+Id: g=3a5b3d0e615c01e8154a87a37f3f481a
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema
+  Id: g=21cc33b08070fdf105c085f939188c50
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Id: g=f0b9036be7469bf36d912c0669323138
+    Type: BaseObjectType
+    Children:
+    - Name: BoilerLevelSetpoint
+      Id: g=f3851da1547365f285cc324647b8162b
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: BoilerTempSetpoint
+      Id: g=671f17ead8db1787dc7f370f2e4c8028
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Class: Reference
+    Target: ns=21;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=60
+    Direction: Forward
+  - Name: Store
+    Id: g=4305aecb3cf2a50d8cc31006026b9bfd
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"b64b1a3c83f8b66c8afbfccb5cec04d9","Namespace":40}
+    Children:
+    - Name: Kind
+      Id: g=58087682cca6741febde5c4ac0afd861
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":29}
+  - Name: TargetNode
+    Id: g=ed572cf8baadb92066b7fdfdbd529493
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"d3b4a10b5eff7364d74782c172a65b8e","Namespace":40}
+    Children:
+    - Name: Kind
+      Id: g=8b466b6dc9dbdfb3c0ef751f77f8ad82
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=e75a581c78bcfb3bf5d1f26f14b1514f
+    Type: BaseObjectType
+    Children:
+    - Name: BoilerLevelSetpoint
+      Id: g=eea8de32d8a75c47082395253926100e
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: BoilerTempSetpoint
+      Id: g=1a432601082ef03777dbc25e6e933288
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0

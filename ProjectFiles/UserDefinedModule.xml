@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module version="1">
+    <Name>BoilerDemoUserDefinedModule</Name>
+    <Company></Company>
+    <Version>0.0.0</Version>
+    <MinUpgradableVersion>0.0.0</MinUpgradableVersion>
+    <Binding name="Net" />
+
+    <Namespaces/>
+
+    <Dependencies>
+        <Core version="0.0.0" />
+        <Binding version="0.0.0" />
+        <Module name="FTOptix.HMIProject.Net" version="0.0.0" />
+    </Dependencies>
+
+    <Nodes/>
+
+    <TypeMappings>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="d3eef2c71f1165f50ef7fdb13b83ff87" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="4bb9384bacd6b235b0f0db477d0972cc" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="b25c8edb35df2acb37220b8cb1c56e4d" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="29437e70992a44739164a48076848b08" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="316ec35132b94324835d2dd2e1050f21" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="3fd66780c61685c48f980e0c6667c78e" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="a3daadbcc88c5753e88ae7d8f72bb57f" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="4824f9f9d37546088f8b245da41ce72b" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="ee09ac72b4bc47939f132c2c7c55de68" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="6ed6fbe544b23c05d85da20aba3442d1" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="06897908427b5ef771111aa27f51c426" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="1b0dc70d5d42c09a70acec1c917ca5d0" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="a6df1077edf001fbadcd01964c0ff666" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="9617749f37fb4b93b8641d056d90659b" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="f6435f3dd20f77ff22adae56a9b158b2" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="25f6ccda7336d6324a20475d355294a6" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="fa006125890127d665bea8449cc271ec" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="7a5dfc0d106643908d7c66b50e80d8c5" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="76398dfd1ca24d70b848bc3bf0f42b06" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="e0ec74b0e0af4cc392a0b4ff1c4f74ff" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="902a2674b8b0483d81998a82be8647d8" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="1b7c52eeda43434dbbfd1cb734fcde88" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="52490a9efa8b43bbacfc2c6ed12361dc" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="BoilerDemo" guid="5def5ff7421d4fdc9043e27001c40ea6" />
+            </TargetType>
+        </TypeMapping>
+    </TypeMappings>
+</Module>

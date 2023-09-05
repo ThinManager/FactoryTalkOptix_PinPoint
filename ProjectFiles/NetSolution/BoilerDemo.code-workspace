@@ -1,0 +1,11 @@
+{
+	"folders": [ 
+		{ 
+			"path": "." 
+		} 
+	], 
+	"settings" : {
+		"typescript.tsc.autoDetect": "off",
+		"dotnet.defaultSolution": "BoilerDemo.sln"
+	}
+}

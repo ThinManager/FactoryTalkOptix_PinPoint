@@ -1,0 +1,192 @@
+Name: Tags
+Id: g=5e719eccf2223c385c9a818e5a8782c0
+Type: FolderType
+Children:
+- Name: Controller Tags
+  Id: g=fed1c40af521bf5579aa9ed6629658da
+  Type: TagStructure
+  DataType: Structure
+  Value: 
+   {
+    "Type": 22,
+    "Body": {
+     "TypeId": {
+      "Id": 22
+     }
+    }
+   }
+  Children:
+  - Name: Tank2
+    Id: g=06e7064cbec790fa15f8d69e0b255842
+    Type: TankUDT1
+    DataType: TankUDT1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "6f388bf78a18bb87793cee6f7df00aec",
+       "Namespace": 40
+      },
+      "Body": {
+       "ValveInStatus": false,
+       "ValveInCmd": false,
+       "ValveOutStatus": false,
+       "ValveOutCmd": false,
+       "Level": 0.0,
+       "SetPoint": 0.0
+      }
+     }
+    Children:
+    - Name: ValveInStatus
+      Id: g=98f4075afac9c1bffcf30fba11c30dc8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c054fd94bc86f28615d097041626f137
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank2.ValveInStatus"
+    - Name: ValveInCmd
+      Id: g=f550a61f698b7994a47be032331e37bf
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a8dbc77727faed968514d84a24404e03
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank2.ValveInCmd"
+    - Name: ValveOutStatus
+      Id: g=1b5dd228b67a43a8327774bde571ec08
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=64a74a383d90fe064eb34fbc6cd11b75
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank2.ValveOutStatus"
+    - Name: ValveOutCmd
+      Id: g=73e5733bc8571e737cc598345534e3db
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4c8688524b8d37c33c6f156205182743
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank2.ValveOutCmd"
+    - Name: Level
+      Id: g=a0943dc4183ccecbca2ca92f3273a2c7
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=b81d5ddcf8d9aa03aa14e9ef3fb4e6e1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank2.Level"
+    - Name: SetPoint
+      Id: g=f388a69594005a24d0e9fb4905e4f24c
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=73f3244966421c633cdb3d8798022939
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank2.SetPoint"
+  - Name: Tank1
+    Id: g=5ed6d8ecd346fbfcaf01c17521dd51ab
+    Type: TankUDT1
+    DataType: TankUDT1
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "6f388bf78a18bb87793cee6f7df00aec",
+       "Namespace": 40
+      },
+      "Body": {
+       "ValveInStatus": false,
+       "ValveInCmd": false,
+       "ValveOutStatus": false,
+       "ValveOutCmd": false,
+       "Level": 0.0,
+       "SetPoint": 0.0
+      }
+     }
+    Children:
+    - Name: ValveInStatus
+      Id: g=2590ef0a6bb3b3f3203c20ce12fa5238
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=d888bf9d60fd6654ae740cb8bbfc576f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank1.ValveInStatus"
+    - Name: ValveInCmd
+      Id: g=f9f4dad64f41fc379851257b53b3e8d8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6ee9ea755375ec77e3df0498a534d56d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank1.ValveInCmd"
+    - Name: ValveOutStatus
+      Id: g=fc1c6b92d4795e614d6a04a87958be56
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=feb1c311ad6be20fe84ab121b58f9887
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank1.ValveOutStatus"
+    - Name: ValveOutCmd
+      Id: g=e7b0d1d1c953aa6ec24c45bde647e97c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=077bed5857e46f704d43a0968e9d06f7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank1.ValveOutCmd"
+    - Name: Level
+      Id: g=4790960d0b3b78bf58cdf9a4939af9ef
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=baa32b58e831ca9061376c452a6442ea
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank1.Level"
+    - Name: SetPoint
+      Id: g=78f2347e213743a5052f33831e58dc7c
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=f26f9b476e937a739aeb370e34a5c9c8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Tank1.SetPoint"

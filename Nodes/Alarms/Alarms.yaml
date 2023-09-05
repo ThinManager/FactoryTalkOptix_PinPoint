@@ -1,0 +1,305 @@
+Name: Alarms
+Id: g=a09607a3a7b2074b871c107d86559787
+Type: AlarmsCategoryFolder
+Children:
+- Name: ImportAndExportAlarms
+  Id: g=b651ca5769061c14a4812ea2281b853a
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Id: g=bb13bae2cc0b8e319d0d942f8ef121bd
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: ImportAlarms
+    Id: g=860d19a5c60c0f8dc3093386f6882e18
+  - Class: Method
+    Name: ExportAlarms
+    Id: g=7f18a64ed941585234fc239631345b9f
+  - Name: CSVPath
+    Id: g=80daa12a7e901322cf2d7d096f50bd44
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: ""
+  - Name: CharacterSeparator
+    Id: g=ce677bf9656982c6fc14bc1c8a38429c
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Name: WrapFields
+    Id: g=8ebb297c441eaf6f476fbd5f598bdc9e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: MessageAsTranslationKey
+    Id: g=2feab8649cb241a2bffc1d8581bf038a
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: T1001.Tank1.Level_L
+  Id: g=7d09979be288f7d4feafcfa122dd62e4
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=dfcd85e2f6d00096491ccf9b0b15cba1
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=423aee534a4979fa18be80e49dbc7315
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/EthernetIPDriver/LogixStation/Tags/Controller Tags/Tank1/Level"
+      Children:
+      - Name: Mode
+        Id: g=36a4df45e4956c82d9a04b105fba8dff
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=5575dbab8d9d4ac2c84bf947210e4520
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: LowLimit
+    Id: g=41485be553cd1d3ec493f7e988bbc2b0
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 5.0
+  - Name: Message
+    Id: g=f99da49f8082baf132a040ab6ae4e231
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"LL1001 - Warning: Tank 1 Low level"}
+- Name: T1002.Tank2.Level_L
+  Id: g=7f0f744ffc3fb613500e9b0b7c4a063e
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=17785f9259e7f1977b283d02c733ea94
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=76d6a1478be7465ce558e669062321dd
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/EthernetIPDriver/LogixStation/Tags/Controller Tags/Tank2/Level"
+      Children:
+      - Name: Mode
+        Id: g=d44b72b1e6e7c5f08c2bc2d68cb53a54
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=a3929359b0ec46306b49171d44da46e6
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: LowLimit
+    Id: g=b3b7edd20ff139906c6d11cf1d2e0c97
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 5.0
+  - Name: Message
+    Id: g=be3e1d5bb28a155c1cded4ad0b7626af
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"LL1002 - Warning: Tank 2 Low level"}
+- Name: B2003.FillLevel.L
+  Id: g=0e54f98ff0f25940eea6165904355123
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=f677b6f3bfebf6d1d0fe7d719cf403ce
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=3b99f7b42d14ae39aa4f6fdd2c74d2f9
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../OPC-UA/OPCUAClient/Objects/Demo/BoilerDemo/Boiler1/FillLevelSensor/FillLevel"
+      Children:
+      - Name: Mode
+        Id: g=58698afa17a6518d7f3faf942cb41e13
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=8321aab080889711e7fde0a3d2d31111
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=1b6e95cb3952e236e9a89bd828de6901
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"LL2003 - Warning: Boiler Low level"}
+  - Name: LowLimit
+    Id: g=f14b65ab5c879e06df1bf666bdfe7a4c
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 5.0
+- Name: EthernetIpStation
+  Id: g=8914281b828c3c834c5f5abf6795d47b
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=c1125d3794f1074f54f3793e3f545023
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: InputValue
+    Id: g=d0eed916d4bbbae22d40cc170c5727fb
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=6d67d4b4a52a3661334dc49dd2aefc86
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/EthernetIPDriver/LogixStation/OperationCode@Value"
+      Children:
+      - Name: Mode
+        Id: g=a316b2148d0c7b1b5306bfeb58a76c5a
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=a2826a3ac36c540f9b7d4ee19ebd0533
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=01de765985ba21d31f1b4383963f9968
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"CD9001 - Warning: Ethernet/IP Station Offline"}
+  - Name: AutoAcknowledge
+    Id: g=919c6615176c4a4c033f5e23ac2e3747
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=e7cb05284f775adbab86b7b6de161b28
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Severity
+    Id: g=a37b3d0e13b7a9263d213a0818d7fc2f
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 10
+- Name: OpcUaStation
+  Id: g=64a3e6bdecc3817a7987d55bd7198182
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=f0cb9527e17c9b764a5c6e303201890a
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=42321d17380482d5f33086a5802c45b9
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../OPC-UA/OPCUAClient/ConnectionStatus@Value"
+      Children:
+      - Name: Mode
+        Id: g=53be7ba7d39a0e1f2b95e06ad8b74f12
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=d2bd331209ecd6f31c3078f9127fd8b6
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=321f0e5120459668bc48306b817aa894
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"CD9002 - Warning: OPC-UA Station Offline"}
+  - Name: AutoAcknowledge
+    Id: g=47b0be04f24bec4e5a9381e08f802879
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: AutoConfirm
+    Id: g=997e5897f857222d7c716131b8edd391
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: LowLimit
+    Id: g=8c449b9c7e831765174dfe860ddba161
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: HighLimit
+    Id: g=111ac41db4d8e9de450fcacafe107ad3
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 3.0
+  - Name: Severity
+    Id: g=9bd9938d87f4ba660ea3ca8ed7710f9b
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 10

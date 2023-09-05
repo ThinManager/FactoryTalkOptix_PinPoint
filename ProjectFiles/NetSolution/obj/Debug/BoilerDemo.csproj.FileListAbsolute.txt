@@ -1,0 +1,12 @@
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\bin\BoilerDemo.deps.json
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\bin\BoilerDemo.dll
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\bin\BoilerDemo.pdb
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\obj\Debug\BoilerDemo.csproj.AssemblyReference.cache
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\obj\Debug\BoilerDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\obj\Debug\BoilerDemo.AssemblyInfoInputs.cache
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\obj\Debug\BoilerDemo.AssemblyInfo.cs
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\obj\Debug\BoilerDemo.csproj.CoreCompileInputs.cache
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\obj\Debug\BoilerDemo.dll
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\obj\Debug\refint\BoilerDemo.dll
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\obj\Debug\BoilerDemo.pdb
+C:\Users\labuser\Documents\GitHub\FactoryTalkOptix_PinPoint\ProjectFiles\NetSolution\obj\Debug\ref\BoilerDemo.dll
