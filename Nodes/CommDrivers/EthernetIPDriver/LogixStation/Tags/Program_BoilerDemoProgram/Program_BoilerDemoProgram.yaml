@@ -1,0 +1,37 @@
+Name: 'Program:BoilerDemoProgram'
+Id: g=f63121dffaa6808e7afdf5a4f7a2ec5b
+Type: FolderType
+Children:
+- Name: Count
+  Id: g=3143e26c7ffff057f9f5ebec243c8b1d
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=6a4e70e99f1a08c84d23490895f592af
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:BoilerDemoProgram.Count"
+- Name: Direction
+  Id: g=95afd38e2e52ac668facdbd1224ed50b
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=99599963ec638a6dd95332e8f1b2e8b9
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:BoilerDemoProgram.Direction"
+- Name: Init
+  Id: g=0a347f05260b127b3b32cc9a4645a5a7
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=8482a5297dddbc8aa1617419fdad46dd
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:BoilerDemoProgram.Init"

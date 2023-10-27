@@ -3,59 +3,794 @@ Id: g=15232998cc463c6d5f02d9229f6624eb
 Type: FolderType
 Children:
 - Class: DataType
-  Name: TankUDT1
-  Id: g=6f388bf78a18bb87793cee6f7df00aec
+  Name: DATETIMESTRUCT
+  Id: g=a054a8e4b23b5932ef9d0cc0fd0b2669
   Supertype: Structure
   StructDefinition: 
    {
-    "Name": "TankUDT1",
+    "Name": "DATETIMESTRUCT",
     "DataType": {
      "IdType": 2,
-     "Id": "6f388bf78a18bb87793cee6f7df00aec",
+     "Id": "a054a8e4b23b5932ef9d0cc0fd0b2669",
      "Namespace": 40
     },
     "Fields": [{
-      "Name": "ValveInStatus",
+      "Name": "Day",
       "DataType": {
-       "Id": 1
-      },
-      "Value": false
+       "Id": 6
+      }
      },{
-      "Name": "ValveInCmd",
+      "Name": "Hour",
       "DataType": {
-       "Id": 1
-      },
-      "Value": false
+       "Id": 6
+      }
      },{
-      "Name": "ValveOutStatus",
+      "Name": "Microsecond",
       "DataType": {
-       "Id": 1
-      },
-      "Value": false
+       "Id": 6
+      }
      },{
-      "Name": "ValveOutCmd",
+      "Name": "Minute",
       "DataType": {
-       "Id": 1
-      },
-      "Value": false
+       "Id": 6
+      }
      },{
+      "Name": "Month",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Second",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Year",
+      "DataType": {
+       "Id": 6
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"DATETIMESTRUCT"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=241d74375ea3661f4fd4c2926cb33169
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: TankUDT
+  Id: g=1b6a5e285e1ffd78f8831ced07762be2
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "TankUDT",
+    "DataType": {
+     "IdType": 2,
+     "Id": "1b6a5e285e1ffd78f8831ced07762be2",
+     "Namespace": 40
+    },
+    "Fields": [{
       "Name": "Level",
       "DataType": {
        "Id": 10
-      },
-      "Value": 0.0
+      }
      },{
       "Name": "SetPoint",
       "DataType": {
        "Id": 10
-      },
-      "Value": 0.0
+      }
+     },{
+      "Name": "ValveInCmd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ValveInStatus",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ValveOutCmd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ValveOutStatus",
+      "DataType": {
+       "Id": 1
+      }
      }]
    }
-  DisplayName: {"LocaleId":"","Text":"TankUDT1"}
+  DisplayName: {"LocaleId":"","Text":"TankUDT"}
   Children:
   - Name: ns=0;Default Binary
-    Id: g=d8e06cce9b04241334dfe00e89931601
+    Id: g=2549ff78004945cae862f97eafdfb602
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Motor
+  Id: g=0f05a08bc99d10e907f479afeb076c54
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Motor",
+    "DataType": {
+     "IdType": 2,
+     "Id": "0f05a08bc99d10e907f479afeb076c54",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "CmdOffOn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Power",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "SetSpeed",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Speed",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Motor"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=f965e03ca15b293cdf3beb439056acb1
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: ALARM_ANALOG
+  Id: g=c0e4bc5d90a6f77166cbbe6a6554a184
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "ALARM_ANALOG",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c0e4bc5d90a6f77166cbbe6a6554a184",
+     "Namespace": 40
+    },
+    "Fields": [{
+      "Name": "AckRequired",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AckTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "AlarmCountReset",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AlarmCountResetTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "AlarmLimitsInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "AnyInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Commissioned",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Deadband",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DeadbandInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Disabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "HEnabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "HHEnabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "HHInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HHMinDurationEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HHSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "HHShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "HInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "HMinDurationEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "HShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "In",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "InAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InstructFault",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LEnabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "LInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LLEnabled",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LLInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "LLInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "LLMinDurationEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LLSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LLShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LMinDurationEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "LSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "LShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "MaxShelveDuration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "MinDurationACC",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "MinDurationPRE",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "OperAckAll",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "OperUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgAckAll",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgDisable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgEnable",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgSuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgUnshelveAll",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ProgUnsuppress",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "RetToNormalTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "ROC",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ROCNegAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ROCNegInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "ROCNegInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ROCNegLimitInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCNegSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ROCNegShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPeriod",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ROCPeriodInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosAcked",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosAlarmCount",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ROCPosInAlarm",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosInAlarmTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "ROCPosInAlarmUnack",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosLimit",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ROCPosLimitInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosOperAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosOperShelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosOperUnshelve",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosProgAck",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ROCPosSeverity",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ROCPosShelved",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "SeverityInv",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "ShelveDuration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ShelveTime",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "Status",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Suppressed",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UnshelveTime",
+      "DataType": {
+       "Id": 8
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"ALARM_ANALOG"}
+  Children:
+  - Name: ns=0;Default Binary
+    Id: g=4e9585a983273af92529a8237af206fd
     Type: DataTypeEncodingType
     ModellingRule: None
     DisplayName: {"LocaleId":"","Text":"Default Binary"}

@@ -6,7 +6,7 @@ Children:
   Id: g=ad01c28280a0267c8bfc30158461500d
   Type: BaseDataVariableType
   DataType: String
-  Value: "opc.tcp://127.0.0.1:48010"
+  Value: "opc.tcp://127.0.0.1:48020"
 - Name: MinimumMessageSecurityMode
   Id: g=4643eed9447ba9eb720d822d7f673153
   Type: BaseDataVariableType
@@ -235,6 +235,14 @@ Children:
       ValueRank: OneDimension
       ArrayDimensions: [3]
       Value: [{"LocaleId":"","Text":"Off"},{"LocaleId":"","Text":"Heating"},{"LocaleId":"","Text":"Cooling"}]
+    - Name: ns=0;EnumValues
+      Id: ns=5;g=3d938a46ad8ba28090a155c5720a2d29
+      Type: BaseDataVariableType
+      DataType: EnumValueType
+      ModellingRule: None
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
   - Name: FillLevelSensorType
     Id: ns=5;i=1002
     Supertype: BaseObjectType

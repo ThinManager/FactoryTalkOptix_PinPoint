@@ -2,91 +2,1759 @@ Name: ns=33;VariableTypes
 Id: g=81a0a21fa3cd856070a1339dee2fa988
 Type: FolderType
 Children:
-- Name: TankUDT1
-  Id: g=4ecfef4a5386ee2faa4699255e9d9d23
+- Name: DATETIMESTRUCT
+  Id: g=34d7a3fe3e319d72fbbef03c3eb5192c
   Supertype: TagStructure
-  DataType: TankUDT1
+  DataType: DATETIMESTRUCT
   ValueRank: Any
   Value: 
    {
     "TypeId": {
      "IdType": 2,
-     "Id": "6f388bf78a18bb87793cee6f7df00aec",
+     "Id": "a054a8e4b23b5932ef9d0cc0fd0b2669",
      "Namespace": 40
     },
     "Body": {
-     "ValveInStatus": false,
-     "ValveInCmd": false,
-     "ValveOutStatus": false,
-     "ValveOutCmd": false,
-     "Level": 0.0,
-     "SetPoint": 0.0
+     "Day": 0,
+     "Hour": 0,
+     "Microsecond": 0,
+     "Minute": 0,
+     "Month": 0,
+     "Second": 0,
+     "Year": 0
     }
    }
   Children:
-  - Name: ValveInStatus
-    Id: g=8988cbbf497f9593ca4511356ed3f557
+  - Name: Day
+    Id: g=facdfecdf2f5271cfe8b45b1f422d5d5
     Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
+    DataType: Int32
+    Value: 0
     Children:
     - Name: SymbolName
-      Id: g=f642f4e0b60f57194d344e7b7350f635
+      Id: g=4b387017e12f5d7d81ad588501872bef
       Type: BaseDataVariableType
       DataType: String
-      Value: "ValveInStatus"
-  - Name: ValveInCmd
-    Id: g=ebebebed04c1ed6f577e58100a122ae0
+      Value: "Day"
+  - Name: Hour
+    Id: g=929084d377a77536920a77a1eb415264
     Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
+    DataType: Int32
+    Value: 0
     Children:
     - Name: SymbolName
-      Id: g=6658bbaa6964d360f7bff637906970a8
+      Id: g=8ea69600f5c627b8e5f54bffc8f16d65
       Type: BaseDataVariableType
       DataType: String
-      Value: "ValveInCmd"
-  - Name: ValveOutStatus
-    Id: g=a915a3b41f0493bfdff16ff1d8b90a9c
+      Value: "Hour"
+  - Name: Microsecond
+    Id: g=eee12a783eb43c0bc38004752f3abea0
     Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
+    DataType: Int32
+    Value: 0
     Children:
     - Name: SymbolName
-      Id: g=913f17fd61c247e3be6ce0798f1f4987
+      Id: g=072839ef80923e6ad1104da9588446ad
       Type: BaseDataVariableType
       DataType: String
-      Value: "ValveOutStatus"
-  - Name: ValveOutCmd
-    Id: g=774a02ad74edc3237d447b3ff5d16433
+      Value: "Microsecond"
+  - Name: Minute
+    Id: g=eee4c915edfa589641dbf3eb2789839e
     Type: RAEtherNetIPTag
-    DataType: Boolean
-    Value: false
+    DataType: Int32
+    Value: 0
     Children:
     - Name: SymbolName
-      Id: g=15f2e2d4f0f3a2a648135cafb33c4a77
+      Id: g=a3e8a3ef8087b83b7c7b99aa62554c91
       Type: BaseDataVariableType
       DataType: String
-      Value: "ValveOutCmd"
+      Value: "Minute"
+  - Name: Month
+    Id: g=036df9d155eb9acf8775b1e6a4dc14f6
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=2867c202c86d93a47bb4075ccea13583
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Month"
+  - Name: Second
+    Id: g=74e84895dbf319e9b11a876148d8fe72
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=55a1186cdf46e6803ac722bd12f65fa2
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Second"
+  - Name: Year
+    Id: g=ceee64038dc6099a57a519042e5ce007
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=dfa9abb7db703c87c2e4c29efc0be879
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Year"
+- Name: TankUDT
+  Id: g=2c59e92b13ad51d73cc146699afb82b6
+  Supertype: TagStructure
+  DataType: TankUDT
+  ValueRank: Any
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "1b6a5e285e1ffd78f8831ced07762be2",
+     "Namespace": 40
+    },
+    "Body": {
+     "Level": 0.0,
+     "SetPoint": 0.0,
+     "ValveInCmd": false,
+     "ValveInStatus": false,
+     "ValveOutCmd": false,
+     "ValveOutStatus": false
+    }
+   }
+  Children:
   - Name: Level
-    Id: g=c3f38436bd2da8ce7d3bcfc6dc5436fe
+    Id: g=b82ec56f36d72160621e51a9b6a98e6f
     Type: RAEtherNetIPTag
     DataType: Float
     Value: 0.0
     Children:
     - Name: SymbolName
-      Id: g=19121c9b584ca88f048bfecf67eaee02
+      Id: g=b72ab89c94bdfd5d128199158bd7cbe4
       Type: BaseDataVariableType
       DataType: String
       Value: "Level"
   - Name: SetPoint
-    Id: g=3ada4e617461c644747106c5d798db68
+    Id: g=023156858fd428f11183d280d40f87e8
     Type: RAEtherNetIPTag
     DataType: Float
     Value: 0.0
     Children:
     - Name: SymbolName
-      Id: g=83779ada5d2f89daba8bdb012f760260
+      Id: g=2bd6baba4c1a1a5350119b476830e6e3
       Type: BaseDataVariableType
       DataType: String
       Value: "SetPoint"
+  - Name: ValveInCmd
+    Id: g=87b40735bc90b83d6c697f0ba239c7e9
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d3770486158540b17931dd59a40288b1
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValveInCmd"
+  - Name: ValveInStatus
+    Id: g=f47032c59a8f92556970ec44433f125d
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=0a3e6783de949f7df9e4075235007812
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValveInStatus"
+  - Name: ValveOutCmd
+    Id: g=ab6d6dfd96b3873bc4f595a56189ca3f
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=3d00a982f54882ecb4a275352971828b
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValveOutCmd"
+  - Name: ValveOutStatus
+    Id: g=6649a65ed4cbb443a7430501bf39118c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=00b43a13395e9e9842130e5aac384e8c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ValveOutStatus"
+- Name: Motor
+  Id: g=658130c1675bdefd6433050f04d8a74e
+  Supertype: TagStructure
+  DataType: Motor
+  ValueRank: Any
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "0f05a08bc99d10e907f479afeb076c54",
+     "Namespace": 40
+    },
+    "Body": {
+     "CmdOffOn": false,
+     "Power": 0.0,
+     "SetSpeed": 0,
+     "Speed": 0,
+     "Status": false
+    }
+   }
+  Children:
+  - Name: CmdOffOn
+    Id: g=7703748c1968543a2adb31ade4565e87
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=26875650150f6a1cd24910247614e81a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CmdOffOn"
+  - Name: Power
+    Id: g=1ab023279f8fd7452a649b9d5f9ad2ce
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=4de991b1eb3d41d259590c009fd87569
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Power"
+  - Name: SetSpeed
+    Id: g=4f599eac8641092e79a92ea4922e4f52
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=51b3e07767b84aede6b3eb50a09de091
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SetSpeed"
+  - Name: Speed
+    Id: g=60b98e732267a9f3f95b782c63668067
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=0aaa14f2924bc3cc7920ebeaef0be810
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Speed"
+  - Name: Status
+    Id: g=47491926237cf058ce368437972b844e
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=122a0212713621a0a62b1b1904001458
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Status"
+- Name: ALARM_ANALOG
+  Id: g=6c6ac3ab4b3b8b99e828111ea5a37a44
+  Supertype: TagStructure
+  DataType: ALARM_ANALOG
+  ValueRank: Any
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "c0e4bc5d90a6f77166cbbe6a6554a184",
+     "Namespace": 40
+    },
+    "Body": {
+     "AckRequired": false,
+     "AckTime": 0,
+     "AlarmCountReset": false,
+     "AlarmCountResetTime": 0,
+     "AlarmLimitsInv": false,
+     "AnyInAlarmUnack": false,
+     "Commissioned": false,
+     "Deadband": 0.0,
+     "DeadbandInv": false,
+     "Disabled": false,
+     "EnableIn": false,
+     "EnableOut": false,
+     "HAcked": false,
+     "HAlarmCount": 0,
+     "HEnabled": false,
+     "HHAcked": false,
+     "HHAlarmCount": 0,
+     "HHEnabled": false,
+     "HHInAlarm": false,
+     "HHInAlarmTime": 0,
+     "HHInAlarmUnack": false,
+     "HHLimit": 0.0,
+     "HHMinDurationEnable": false,
+     "HHOperAck": false,
+     "HHOperShelve": false,
+     "HHOperUnshelve": false,
+     "HHProgAck": false,
+     "HHSeverity": 0,
+     "HHShelved": false,
+     "HInAlarm": false,
+     "HInAlarmTime": 0,
+     "HInAlarmUnack": false,
+     "HLimit": 0.0,
+     "HMinDurationEnable": false,
+     "HOperAck": false,
+     "HOperShelve": false,
+     "HOperUnshelve": false,
+     "HProgAck": false,
+     "HSeverity": 0,
+     "HShelved": false,
+     "In": 0.0,
+     "InAlarm": false,
+     "InFault": false,
+     "InFaulted": false,
+     "InstructFault": false,
+     "LAcked": false,
+     "LAlarmCount": 0,
+     "LEnabled": false,
+     "LInAlarm": false,
+     "LInAlarmTime": 0,
+     "LInAlarmUnack": false,
+     "LLAcked": false,
+     "LLAlarmCount": 0,
+     "LLEnabled": false,
+     "LLimit": 0.0,
+     "LLInAlarm": false,
+     "LLInAlarmTime": 0,
+     "LLInAlarmUnack": false,
+     "LLLimit": 0.0,
+     "LLMinDurationEnable": false,
+     "LLOperAck": false,
+     "LLOperShelve": false,
+     "LLOperUnshelve": false,
+     "LLProgAck": false,
+     "LLSeverity": 0,
+     "LLShelved": false,
+     "LMinDurationEnable": false,
+     "LOperAck": false,
+     "LOperShelve": false,
+     "LOperUnshelve": false,
+     "LProgAck": false,
+     "LSeverity": 0,
+     "LShelved": false,
+     "MaxShelveDuration": 0,
+     "MinDurationACC": 0,
+     "MinDurationPRE": 0,
+     "OperAckAll": false,
+     "OperDisable": false,
+     "OperEnable": false,
+     "OperSuppress": false,
+     "OperUnsuppress": false,
+     "ProgAckAll": false,
+     "ProgDisable": false,
+     "ProgEnable": false,
+     "ProgSuppress": false,
+     "ProgUnshelveAll": false,
+     "ProgUnsuppress": false,
+     "RetToNormalTime": 0,
+     "ROC": 0.0,
+     "ROCNegAcked": false,
+     "ROCNegAlarmCount": 0,
+     "ROCNegInAlarm": false,
+     "ROCNegInAlarmTime": 0,
+     "ROCNegInAlarmUnack": false,
+     "ROCNegLimit": 0.0,
+     "ROCNegLimitInv": false,
+     "ROCNegOperAck": false,
+     "ROCNegOperShelve": false,
+     "ROCNegOperUnshelve": false,
+     "ROCNegProgAck": false,
+     "ROCNegSeverity": 0,
+     "ROCNegShelved": false,
+     "ROCPeriod": 0.0,
+     "ROCPeriodInv": false,
+     "ROCPosAcked": false,
+     "ROCPosAlarmCount": 0,
+     "ROCPosInAlarm": false,
+     "ROCPosInAlarmTime": 0,
+     "ROCPosInAlarmUnack": false,
+     "ROCPosLimit": 0.0,
+     "ROCPosLimitInv": false,
+     "ROCPosOperAck": false,
+     "ROCPosOperShelve": false,
+     "ROCPosOperUnshelve": false,
+     "ROCPosProgAck": false,
+     "ROCPosSeverity": 0,
+     "ROCPosShelved": false,
+     "SeverityInv": false,
+     "ShelveDuration": 0,
+     "ShelveTime": 0,
+     "Status": 0,
+     "Suppressed": false,
+     "UnshelveTime": 0
+    }
+   }
+  Children:
+  - Name: AckRequired
+    Id: g=05e0aac892212ccb1b51060dfd339401
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=dd7de6ae098c1d45a8118e6fb7a315ff
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AckRequired"
+  - Name: AckTime
+    Id: g=7b543f5aaa5927406f9594242b5f0167
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=a5bbc61914bc2680708dfa81f7c4d0f8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AckTime"
+  - Name: AlarmCountReset
+    Id: g=acd1ff560b6304b46b45b2dd24a21a40
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=c5f786ab22ba2bd1551cd5721f6e9361
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AlarmCountReset"
+  - Name: AlarmCountResetTime
+    Id: g=30ce258a28922f3953bb2296a28f3fd8
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=2b48008cbcf655ab1bdd1c725ca18913
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AlarmCountResetTime"
+  - Name: AlarmLimitsInv
+    Id: g=c9a7e885ccabf1f35beb65964980326b
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=96adf4c9d3399cb0520d28b5fae18026
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AlarmLimitsInv"
+  - Name: AnyInAlarmUnack
+    Id: g=99e2929f3e251ac1fce52b4c0163962b
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=56e06f9fb1e1a495772b85c0cb160d62
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "AnyInAlarmUnack"
+  - Name: Commissioned
+    Id: g=737f18958a625faa9a46681061aa16e7
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=4b34f162518d43ab964ad914e1cad66c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Commissioned"
+  - Name: Deadband
+    Id: g=084373b14bb65de463ebf2a175a32f01
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=d7dcb9e98f7ceed0c788b948b0d6ca18
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Deadband"
+  - Name: DeadbandInv
+    Id: g=99d366e82ccc168352a067e78409a004
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=54a2cbedcd8c824108d0259b0e05415d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DeadbandInv"
+  - Name: Disabled
+    Id: g=be1ad5307f41633502e0af39ac8336d1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=c2459f2788986d4e5d169ea0de57145d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Disabled"
+  - Name: EnableIn
+    Id: g=6745438687aec8e77791991db47e4b97
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=139548e3ff08e68c57b5a4b27fcfeff5
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableIn"
+  - Name: EnableOut
+    Id: g=ec76848169378705ed83bad6dcd2d657
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=0be2d57670bbd9eb3f41d20474e04d6d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnableOut"
+  - Name: HAcked
+    Id: g=a05e5cc9ca06d6eb13d3bbf68bbcab90
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=151d174209ac3145864c54b8d296d073
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HAcked"
+  - Name: HAlarmCount
+    Id: g=9b1c84110599ecedc9819372a6d9f598
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=da601a1f8325c4bcbc2487f9b9677671
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HAlarmCount"
+  - Name: HEnabled
+    Id: g=c4640d1a5294b7e113dfedf5c77df16c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=245bf21c693691a8804cc872308e0fea
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HEnabled"
+  - Name: HHAcked
+    Id: g=0ec03244e9b51cbc323df6a9ec6fa9ce
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=49437e99465dc7f943041aa0e9e0a7ef
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHAcked"
+  - Name: HHAlarmCount
+    Id: g=eb5e88695e6f16203e179e9a61bdec15
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=5bb9455c06365669860186884d9d66eb
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHAlarmCount"
+  - Name: HHEnabled
+    Id: g=2f7a14b7ca98c89986c291ebcd98de6a
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=29f1c21075519e2d9013eebfa375d4d0
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHEnabled"
+  - Name: HHInAlarm
+    Id: g=b08f476b9cf99aedc545fac71167c83d
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=39255294c26f7233c71907cf8c2b466d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHInAlarm"
+  - Name: HHInAlarmTime
+    Id: g=6f2805ce4d51fca601bd01ded9e6834f
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=10c4a90123132f13686ba10cbe175474
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHInAlarmTime"
+  - Name: HHInAlarmUnack
+    Id: g=ea5e722df1d4b35013566ef9358929e4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=97153796b4e0c101fee4c9a0db9b0a57
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHInAlarmUnack"
+  - Name: HHLimit
+    Id: g=72561bd404ac9c4dc066446e86aaced3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=6fb8b6943d615e8ed1c6b2f30124923e
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHLimit"
+  - Name: HHMinDurationEnable
+    Id: g=44a61a13aa34d2214232c1d60d141da3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=abe5205a3e2f8347590589d4085e3b97
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHMinDurationEnable"
+  - Name: HHOperAck
+    Id: g=af064f475fc76163246b77db91faeaf3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b8e852ee8dad09f1a1f4b91399dcc083
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHOperAck"
+  - Name: HHOperShelve
+    Id: g=ea717f6a591a73c778149d3e4fbaf5ed
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=2290a895e5f85fc955f9e0f12edb4a17
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHOperShelve"
+  - Name: HHOperUnshelve
+    Id: g=3a72921e379dc4af5deb64490f6238ae
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=7b06b03379c0dbebc4f519111cfd2fee
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHOperUnshelve"
+  - Name: HHProgAck
+    Id: g=645d5f01a292be0dd51f8d7e28a94ab4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=0867d0182702aaa4bcdedaf3017a9475
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHProgAck"
+  - Name: HHSeverity
+    Id: g=53bc800ffcb13e3920a377745f7a507c
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=106a57e20fd0056f21c0c55d79bfcb58
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHSeverity"
+  - Name: HHShelved
+    Id: g=442ac25496e2838e6e87d36eb1cf79d3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=6770623cc2918d19db835ac40d379fac
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HHShelved"
+  - Name: HInAlarm
+    Id: g=5f825f0f26ee4849c9b0e375c887f62c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=1de1292580e9ca39d528646b0b500502
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HInAlarm"
+  - Name: HInAlarmTime
+    Id: g=65ccdc788ce3fe617ab38a40e0d65bdf
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=e018d7d945f2ed91841441314d8dac68
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HInAlarmTime"
+  - Name: HInAlarmUnack
+    Id: g=9a832f09544bdbc31e958acfac9a04e7
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=10564ffa24685f8c09aafff665447c92
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HInAlarmUnack"
+  - Name: HLimit
+    Id: g=ea7631f7b8c01d1011301eb6342989fc
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=fb85942536c43811ccbaf2f0e380b7d3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HLimit"
+  - Name: HMinDurationEnable
+    Id: g=42d505a2dbcb19ff9e990131f5e9313f
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=cd17ec45671bf1d90ccde50918b53c25
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HMinDurationEnable"
+  - Name: HOperAck
+    Id: g=18a184ffcb3fcf1f405dad81d865e1e7
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=906b1491190dfc62bfa760b5fabde1bf
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HOperAck"
+  - Name: HOperShelve
+    Id: g=14fe87d69f00c94b5db702b0effd7e77
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=8229fa4c522a5f4642ca19e810c78e33
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HOperShelve"
+  - Name: HOperUnshelve
+    Id: g=6d9162029cc43a6157a7c770fd069a26
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=83e106b6d1f0ff16cdffb0075fce0d99
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HOperUnshelve"
+  - Name: HProgAck
+    Id: g=36271a0abc960f4f7b4d00832eab7c98
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=91ddb353c25b8bbc8912c78422bc330e
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HProgAck"
+  - Name: HSeverity
+    Id: g=27a100db3586e1e6e41645e9049cd918
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=12c3fa22384db183d910d850c9e5fc48
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HSeverity"
+  - Name: HShelved
+    Id: g=53b839ac5a1ac88b470798108a85d800
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=ef6811caa7cec8c12ae3fe34df64adf2
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "HShelved"
+  - Name: In
+    Id: g=6923e5d4dbc94fda2024435c71e8db7f
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=695dc870917b6db59e17a71febfbecc3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "In"
+  - Name: InAlarm
+    Id: g=84d3c699ee54adcfafcf07289ac4b03c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=1bff42784dd08a215c3949889a5a8dbb
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "InAlarm"
+  - Name: InFault
+    Id: g=43e8ff4809ba7a9998f20821ed614713
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a4ba6fb447830c75b3717822950e3e39
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "InFault"
+  - Name: InFaulted
+    Id: g=5c816cb1c9a10924900be7fe6a49011c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=43ea8780384f2448072bf6ef0ebd876f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "InFaulted"
+  - Name: InstructFault
+    Id: g=5d169c6f87a581ba849d93f5c0f4fa3d
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=7faed0f41c94f9a4d1efbbb004edbd26
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "InstructFault"
+  - Name: LAcked
+    Id: g=b0c88ffa6bd52b86e3ec3f9f34f69964
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=54be74ad6226db9b8cce1ebe20a27bc7
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LAcked"
+  - Name: LAlarmCount
+    Id: g=45aebb2dbe2cdc7dbeb93a5add7a1513
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=7e86c8c413c3749a810ea5aefdb6f381
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LAlarmCount"
+  - Name: LEnabled
+    Id: g=5381086fa57d62d0da463a9e78dbad97
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=8232e487fe02fd699eeaa1b87ec20532
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LEnabled"
+  - Name: LInAlarm
+    Id: g=115349007d3b807e5cb76e678e9c0873
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=5304468719e31e7672cd2d5ee61bb84e
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LInAlarm"
+  - Name: LInAlarmTime
+    Id: g=d3eeed6878d4c5d0fbc8238431b48112
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=a38f4695e91e6d123fd137c141d518c7
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LInAlarmTime"
+  - Name: LInAlarmUnack
+    Id: g=960b67230d7009e54820b39cae99a4ea
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=48ac6b1197400eb044d796a9620b172d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LInAlarmUnack"
+  - Name: LLAcked
+    Id: g=169095a4662440252c1c6070bf0a5991
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b3bf7ca49cd4bdc09f448b2d913443c4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLAcked"
+  - Name: LLAlarmCount
+    Id: g=dcdc902df6912ec645a3d310cf575db9
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=de1c52ee81e5e7b9587b4753b421a7e0
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLAlarmCount"
+  - Name: LLEnabled
+    Id: g=ee9a01d43b173c30944f3a6b073a2c6b
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=8bb3fc97e9dfa7831ad5231f2e44a76b
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLEnabled"
+  - Name: LLimit
+    Id: g=2bef70937149f4f1073f04a1d90d2488
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=322b8edeb0f17f3f34644bac6dea4c2d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLimit"
+  - Name: LLInAlarm
+    Id: g=19b2031795a298bb282870c497196f09
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=9e6b31245b7b0c9facec065dc2ccb2d6
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLInAlarm"
+  - Name: LLInAlarmTime
+    Id: g=f390c081bfb356f8745bd063844f9fdb
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=718d570c1532d06c829d60e167d8fad2
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLInAlarmTime"
+  - Name: LLInAlarmUnack
+    Id: g=b609a465a2d9202a198c93da72f20122
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d62825de0b0e934d2dfb353fde07237a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLInAlarmUnack"
+  - Name: LLLimit
+    Id: g=c2f75ee91f98be9ef769fd068c80ad8f
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=056271b0d020d04d427d5f8ba6afceab
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLLimit"
+  - Name: LLMinDurationEnable
+    Id: g=fb914c85d718d7443e2fcd2daa5e0238
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d457b3d4ac55d686f59adbb61afce455
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLMinDurationEnable"
+  - Name: LLOperAck
+    Id: g=17c754d14650155672ea774cf8d74850
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=0d31566201831489ec67155686e2778e
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLOperAck"
+  - Name: LLOperShelve
+    Id: g=41da3bbc5a02e427d5e0e439f7c11369
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=4803c951366fa4b82a4f3422893dc058
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLOperShelve"
+  - Name: LLOperUnshelve
+    Id: g=9c42579f826e2a48ce096d5128c9eaa8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=8cee689dddbe6b925204533ca3c7315a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLOperUnshelve"
+  - Name: LLProgAck
+    Id: g=f993918b66c808581d7d3fd48ea8b861
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=73fef182bc04c30ed2f59a24868fc63a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLProgAck"
+  - Name: LLSeverity
+    Id: g=0c151ab182fc1be64d6c1040a60fbca0
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=76e44118dae71c394adabd02185db50b
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLSeverity"
+  - Name: LLShelved
+    Id: g=4f4862dfa540648b18c271ae9576368f
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=5064b741af11bd83d0d3b7c0b3cfe4e3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LLShelved"
+  - Name: LMinDurationEnable
+    Id: g=9dd3154a80055c45e0936a924092e1d9
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=9f7487f2eab2620d240cde79c452da72
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LMinDurationEnable"
+  - Name: LOperAck
+    Id: g=e06335d3e5b9d76d4bd28f464529b425
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=88cce06bb4dae5bdf5435d0878325fb4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LOperAck"
+  - Name: LOperShelve
+    Id: g=0a70baa3d6bf3446712a70f4cc238342
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=fafb9fac63212b4db8d492fcf2291602
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LOperShelve"
+  - Name: LOperUnshelve
+    Id: g=bdabb15773d48e0de8df25fef6143b19
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=eb3c3f6df5faf149cb18bda16f0073f3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LOperUnshelve"
+  - Name: LProgAck
+    Id: g=837c2b8b49ffcb9385aae23e44fafe2a
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=8b090c1468b7e082c60373082c9b77d4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LProgAck"
+  - Name: LSeverity
+    Id: g=9348482710fae5a7543ed822cecf4066
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=e02069f0b3f3137d5bd124b73c2f9bf1
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LSeverity"
+  - Name: LShelved
+    Id: g=5e3d3010e5131eb0a36c477cca715516
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=252f9ea350c62b68ac846989943f11d3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LShelved"
+  - Name: MaxShelveDuration
+    Id: g=c6000c0d3e452948b18f28edcafdbc29
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=39ec61508f6aa31aea205e635894c1f8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "MaxShelveDuration"
+  - Name: MinDurationACC
+    Id: g=89ee543adb18e455a5421b9b0a7bb785
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=9a3fb6e34aaaa8dbba17d50e7f092a82
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "MinDurationACC"
+  - Name: MinDurationPRE
+    Id: g=317aa3fa0b195c52a9c18a25078e7394
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=31e54bb0f477e15acd0d1579ea00bbed
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "MinDurationPRE"
+  - Name: OperAckAll
+    Id: g=459d8372691c1c6af3a8adcb8b0b36b8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=470cf5fff904a5dd747000192bd25400
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OperAckAll"
+  - Name: OperDisable
+    Id: g=923869847e5df17415a6b5c29bd59c28
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=0793c8f0e135a3aa4eb7f8d1f840b4cf
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OperDisable"
+  - Name: OperEnable
+    Id: g=93d0c58c3435f3b3d5929e396838b87c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=f5043c4897750f76dc0ef20e6a75cac6
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OperEnable"
+  - Name: OperSuppress
+    Id: g=03b98ab505128e356d6019773028c748
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=7c3dace1c149d8af77b8f3c4ebdc6224
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OperSuppress"
+  - Name: OperUnsuppress
+    Id: g=147e35163be1515403e825ff1c620ec1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=88af398ab9259a0e94301f9065c21b97
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "OperUnsuppress"
+  - Name: ProgAckAll
+    Id: g=925305f40831cb4ebef6b0213258c758
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=98bf6b945943119205f9cf9356988605
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ProgAckAll"
+  - Name: ProgDisable
+    Id: g=fa487ddc6862be9794cb4ffad6ca191c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d3bc23813326bd0d62a1021b1d8569ce
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ProgDisable"
+  - Name: ProgEnable
+    Id: g=d21df3112a4fcb2e47f2b7969e260882
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=767b62e2c905aad7c6ea42848c07daab
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ProgEnable"
+  - Name: ProgSuppress
+    Id: g=1d9c1809c393de3c0dd8903962fd0412
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a1fca34ee51c427498f76d929d566a1d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ProgSuppress"
+  - Name: ProgUnshelveAll
+    Id: g=5b0816fad45fffb56a313a0cfe21ca9f
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=7badd01d73ab96c71f22982c79c927e5
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ProgUnshelveAll"
+  - Name: ProgUnsuppress
+    Id: g=7d1f947e453d34f7db542bea7f04d6f1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=8152098fbbc5d44f4860c053d7c70739
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ProgUnsuppress"
+  - Name: RetToNormalTime
+    Id: g=0886c8452cce9f84eb8df2135b3e0873
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=1a44d4f7c72432827c4c2f1eb4a32816
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "RetToNormalTime"
+  - Name: ROC
+    Id: g=adf3e44f80e423f5e159a76be8f0895e
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=01152bfdb66679ddd59ad72f32a2337d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROC"
+  - Name: ROCNegAcked
+    Id: g=98f18693a6fc8ee47971d1ffdb231dd3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=1ae10405c091106b98e15449d7a06942
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegAcked"
+  - Name: ROCNegAlarmCount
+    Id: g=8fc1fc5deff47dd3bc709c59453c6ed8
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=8a74bd999bb96781fdef74b71ba73f01
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegAlarmCount"
+  - Name: ROCNegInAlarm
+    Id: g=ce5e9ad6bcabb303a3a5b2aa4bc545f8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=242176a979acb53853255cbcbb9d54bc
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegInAlarm"
+  - Name: ROCNegInAlarmTime
+    Id: g=565cbf63f6745ab380dc474a7e1b6865
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=0ad10e0a6ab860fc8c668820a85a5ab7
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegInAlarmTime"
+  - Name: ROCNegInAlarmUnack
+    Id: g=f88722725f174332a6e3cfc5e372eef3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b5eb785c928c7e298157e2126ee861b2
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegInAlarmUnack"
+  - Name: ROCNegLimit
+    Id: g=6c7a181dff81d4521847345b57e41c57
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=cf1bafda34013814f50a9cd733e0faf9
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegLimit"
+  - Name: ROCNegLimitInv
+    Id: g=f2f42663ba644b19152b46a9d681e6a6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=7c82d6d7e34cad41020cc394759300e5
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegLimitInv"
+  - Name: ROCNegOperAck
+    Id: g=5a243c649abb61fe62c9287901be6d7d
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d043d901a4ee543a24b3f1372f352936
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegOperAck"
+  - Name: ROCNegOperShelve
+    Id: g=408e673364ec017b4f8e35a1a026cea2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=9c0852bf531cc1079521bd1df7cf18df
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegOperShelve"
+  - Name: ROCNegOperUnshelve
+    Id: g=7047cd97c1ce1bbfe047a785b45715f0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=08bc7af7cf4b947a3eaef291629fa040
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegOperUnshelve"
+  - Name: ROCNegProgAck
+    Id: g=8b07b20b556d9740514d2531bae638fe
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=6565a60111c58de9505388c61161359f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegProgAck"
+  - Name: ROCNegSeverity
+    Id: g=2a12d204c5ab8750560f201eb821ef24
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=1a12e842a5f139bb5e7852065b9485c4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegSeverity"
+  - Name: ROCNegShelved
+    Id: g=5faa3dc252c4de726ceb74e6ac5dbaab
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=e314738ce1d074daceb9f6e321961eda
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCNegShelved"
+  - Name: ROCPeriod
+    Id: g=53d57834e7a0a1d91fe09aad85d4685b
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=459014e73dfa9f1c7ef3e6735ca4093c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPeriod"
+  - Name: ROCPeriodInv
+    Id: g=80a2ba4b6ce4c13a26331d62349cf104
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=7a276c82c787a2835d04b7bb54b0ee3f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPeriodInv"
+  - Name: ROCPosAcked
+    Id: g=5ec0238a4a1a8828013f9ea978147d0e
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a4e0cf5d2296fe3da9be65bec02ce35a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosAcked"
+  - Name: ROCPosAlarmCount
+    Id: g=a4882c86489d0dec0084052c9216c9ab
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=470f0667061a15b47630b6dc9ec8cb0d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosAlarmCount"
+  - Name: ROCPosInAlarm
+    Id: g=eeb4c3de28b752c57fe8b3e8ea87926d
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=11500cfad428eb46562218fd06eb84c4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosInAlarm"
+  - Name: ROCPosInAlarmTime
+    Id: g=870c3feab176092f25e2af520d5e679d
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=01ff3d3795b32a6af2597b2d0e170fcf
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosInAlarmTime"
+  - Name: ROCPosInAlarmUnack
+    Id: g=1807d4112fc3ca45b9a3a7b089bc1e47
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=75b6156327a07e5d781ec35912d6186d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosInAlarmUnack"
+  - Name: ROCPosLimit
+    Id: g=2876b341e74fdbc0c033a55ef3642cea
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=7e7d490b354be58d3b806a1a678e4c7f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosLimit"
+  - Name: ROCPosLimitInv
+    Id: g=92ff3a401829c79624f9e15f67ef3c03
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=2b00c674f2155ea30569f5b1612efba4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosLimitInv"
+  - Name: ROCPosOperAck
+    Id: g=4b5956cc1a270a66ec2b4c5c089c5076
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=da5d9d2f9f2198c0535216da79b4f0f0
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosOperAck"
+  - Name: ROCPosOperShelve
+    Id: g=bf2c575218699b0dbf2466a0abc11197
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a8b12e8b14935c44d9172c3d763d965e
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosOperShelve"
+  - Name: ROCPosOperUnshelve
+    Id: g=a408165e904befc60587b7239cf4db0a
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=6d035b9ae368dbf72d3058341b81d097
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosOperUnshelve"
+  - Name: ROCPosProgAck
+    Id: g=5a846863c982eb6ed09923ab548a0b1c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=935bcc5c8bade69b806646b69eb865e3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosProgAck"
+  - Name: ROCPosSeverity
+    Id: g=f3587411c5dde9072fe460107ec943b4
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=12b1567fd67b0e2423b1d5d3f77cadac
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosSeverity"
+  - Name: ROCPosShelved
+    Id: g=b258f58199b52c8d2a5b91e816d3d7b1
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=08d508c0d8876dafdeacf89a5b050b03
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ROCPosShelved"
+  - Name: SeverityInv
+    Id: g=b3086b1097c236c822b0531cc6aa6e46
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b02677f2b96599b78b07a0abe2bf0535
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SeverityInv"
+  - Name: ShelveDuration
+    Id: g=0eff419c395aa61b796e0ab44fa21b41
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=9ab9c768808a7a6ee5a5a6d1ac957014
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ShelveDuration"
+  - Name: ShelveTime
+    Id: g=1b35717dfe1bb2cea9bc823ea018f0f8
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=8da39204f2f6482b308113370f2983b4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ShelveTime"
+  - Name: Status
+    Id: g=e2d846a1259dbd163c391eaaaae7f6a6
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=3ebb819f5f7fa6b2c062ad41f44cc80c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Status"
+  - Name: Suppressed
+    Id: g=e099d6777b556910b43f10df021d2564
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=39234d108ab3d0e7e03dccf471efa57a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Suppressed"
+  - Name: UnshelveTime
+    Id: g=c39ff59136e43f016eee6ab2c169542d
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=dd2c1a0beda2b034817739f99eaa6a27
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UnshelveTime"

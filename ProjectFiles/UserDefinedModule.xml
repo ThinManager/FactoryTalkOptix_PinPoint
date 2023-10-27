@@ -44,11 +44,6 @@
         </TypeMapping>
         <TypeMapping>
             <TargetType>
-                <NodeId namespaceUri="BoilerDemo" guid="3fd66780c61685c48f980e0c6667c78e" />
-            </TargetType>
-        </TypeMapping>
-        <TypeMapping>
-            <TargetType>
                 <NodeId namespaceUri="BoilerDemo" guid="a3daadbcc88c5753e88ae7d8f72bb57f" />
             </TargetType>
         </TypeMapping>

@@ -30,11 +30,6 @@ public class ValveSolenoid : FTOptix.UI.ScaleLayout
 {
 }
 
-[MapType(NamespaceUri = "BoilerDemo", Guid = "3fd66780c61685c48f980e0c6667c78e")]
-public class AlarmsPage1 : BasePage
-{
-}
-
 [MapType(NamespaceUri = "BoilerDemo", Guid = "a3daadbcc88c5753e88ae7d8f72bb57f")]
 public class BoilerWidget : FTOptix.UI.Panel
 {

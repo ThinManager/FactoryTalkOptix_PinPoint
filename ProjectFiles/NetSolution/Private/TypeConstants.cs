@@ -15,7 +15,6 @@ namespace BoilerDemo
         public static readonly NodeId AlarmList = new NodeId(namespaceIndex, new Guid("b25c8edb35df2acb37220b8cb1c56e4d"));
         public static readonly NodeId BasePage = new NodeId(namespaceIndex, new Guid("29437e70992a44739164a48076848b08"));
         public static readonly NodeId ValveSolenoid = new NodeId(namespaceIndex, new Guid("316ec35132b94324835d2dd2e1050f21"));
-        public static readonly NodeId AlarmsPage1 = new NodeId(namespaceIndex, new Guid("3fd66780c61685c48f980e0c6667c78e"));
         public static readonly NodeId BoilerWidget = new NodeId(namespaceIndex, new Guid("a3daadbcc88c5753e88ae7d8f72bb57f"));
         public static readonly NodeId Chevron = new NodeId(namespaceIndex, new Guid("4824f9f9d37546088f8b245da41ce72b"));
         public static readonly NodeId Boiler = new NodeId(namespaceIndex, new Guid("ee09ac72b4bc47939f132c2c7c55de68"));

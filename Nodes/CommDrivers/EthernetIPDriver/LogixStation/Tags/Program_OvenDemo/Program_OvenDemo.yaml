@@ -1,0 +1,2143 @@
+Name: 'Program:OvenDemo'
+Id: g=487df3e2186c3b77cdb15283b513c46e
+Type: FolderType
+Children:
+- Name: FilterAlarm
+  Id: g=5ab692cc4634cb8a49e313c1dbba1572
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=20885d5d5c82df0b74418eb1bb2c1a05
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.FilterAlarm"
+- Name: TemperatureAlarm
+  Id: g=cb88008b4613fb633f38c9b3f16011fd
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=1f721632c6a49bc49ac802e814f880cb
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.TemperatureAlarm"
+- Name: DoorAlarm
+  Id: g=af333ca8debdb038a9ba61f984725eaf
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=bfde20fa6ba0fdfdb03ecf61cd585904
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.DoorAlarm"
+- Name: UseMinute
+  Id: g=7c3a8b7d059ffebf1afb5846a4cb3c69
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=f0fdfac61996790f5ea7efbac5d7ecc1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.UseMinute"
+- Name: SET_FilterLimit
+  Id: g=be8e65ea363b3b172ae70e851df10b99
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=384fab37ab6bf20fd48d9cc5290c3ec1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.SET_FilterLimit"
+- Name: FanAlarm
+  Id: g=2c2d08096703a752b81e2a3372ffb18f
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=47cbfa86c1985652292296179fd154ff
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.FanAlarm"
+- Name: ActualDuration_F
+  Id: g=044a9d4390bcc9b2fff3c8de260dceef
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [4]
+  Value: [0,0,0,0]
+  Children:
+  - Name: SymbolName
+    Id: g=84c293b169bb74df1d4c3809446429fa
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.ActualDuration_F"
+- Name: JobFinish
+  Id: g=1e2693f7e2db181d89a939fc8785df22
+  Type: DATETIMESTRUCT
+  DataType: DATETIMESTRUCT
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "a054a8e4b23b5932ef9d0cc0fd0b2669",
+     "Namespace": 40
+    },
+    "Body": {
+     "Day": 0,
+     "Hour": 0,
+     "Microsecond": 0,
+     "Minute": 0,
+     "Month": 0,
+     "Second": 0,
+     "Year": 0
+    }
+   }
+  Children:
+  - Name: Day
+    Id: g=f3c0edb3bfecfd1c83fc24c10b5a92d8
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=7508e27788ee655602710a08d997d7d5
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobFinish.Day"
+  - Name: Hour
+    Id: g=33b2e9c6a9f8424973b241894ae911ef
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=d0a0bef9b9c3d4a37319af4bca981f49
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobFinish.Hour"
+  - Name: Microsecond
+    Id: g=d33592589971e0b8688d889b3a491213
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=41b42fc640b417b5a7bc6734d5ec304f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobFinish.Microsecond"
+  - Name: Minute
+    Id: g=4803265eb80ae5287b2e22030fac94c5
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=46425e6d2bf78e9b10f0d9683908c501
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobFinish.Minute"
+  - Name: Month
+    Id: g=2e2bed6c11e773455536d5d0dd7c465c
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=884dbac55d9c389e963a0aa0128268dd
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobFinish.Month"
+  - Name: Second
+    Id: g=84170f8ce6839ad796af15180f78d1f3
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=17b57d2aa1b30fd1a0635a3d028fda4d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobFinish.Second"
+  - Name: Year
+    Id: g=fe32e31ee045b05d7e2e7f3fa910cf76
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=66c11eb09770f04a9c226ecade88546a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobFinish.Year"
+- Name: JobStart
+  Id: g=fa4c7b52359a8019bf2a3bdbbfa07b93
+  Type: DATETIMESTRUCT
+  DataType: DATETIMESTRUCT
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "a054a8e4b23b5932ef9d0cc0fd0b2669",
+     "Namespace": 40
+    },
+    "Body": {
+     "Day": 0,
+     "Hour": 0,
+     "Microsecond": 0,
+     "Minute": 0,
+     "Month": 0,
+     "Second": 0,
+     "Year": 0
+    }
+   }
+  Children:
+  - Name: Day
+    Id: g=1109f8224edb7b9cc2ee2f14ccd6b084
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=0c7e00ed5e67e3025fa906d00c50bc1b
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobStart.Day"
+  - Name: Hour
+    Id: g=ecefc9791aa0c35990dc647ab0e0ee1d
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=17cb57204719f1a59226807f9db02ae0
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobStart.Hour"
+  - Name: Microsecond
+    Id: g=a61985f374f0d066aaccbc0d7d25aff9
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=427069da2fe0b9c9291d080fe81ceeae
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobStart.Microsecond"
+  - Name: Minute
+    Id: g=ed11b56f5c78487602462d1eca226b8f
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=ea4dc50214fa9597681bf4557a114f4d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobStart.Minute"
+  - Name: Month
+    Id: g=c194b9bbc0f3b18dfb92980a61a7cdd4
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=b2fa85470ecc76bf35cc77ef98f2df0c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobStart.Month"
+  - Name: Second
+    Id: g=760d0fa3f0690ef1b6edd31c2ecc9592
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=90ba8ae2757258e447156d15063ea33d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobStart.Second"
+  - Name: Year
+    Id: g=cce8024b0344acefbfbf4dbfbaf39cbf
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=290e3e89b2be7e3c25038d0088e3ae13
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.JobStart.Year"
+- Name: RecipeName
+  Id: g=9715131b7a0ff2675159e451b875f418
+  Type: RAEtherNetIPTag
+  DataType: String
+  Value: ""
+  Children:
+  - Name: SymbolName
+    Id: g=0229eed832366785510a585ed1c64497
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.RecipeName"
+- Name: ResetFilter
+  Id: g=2707d094e9a9f1bbc5ef5271d997ccdf
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=47df50a1b7576da6d5bc2e49555acc3a
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.ResetFilter"
+- Name: Count
+  Id: g=50b308428f01b2e454ffd30bc7a37f9b
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=23bcd9746a63645c362040213fd3aa64
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.Count"
+- Name: ActualDuration
+  Id: g=6ff80bb6ac4d914afc70d392b4a376c8
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=a10742f108cc6482be8a87802897b913
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.ActualDuration"
+- Name: ActualSetpoint
+  Id: g=ef97298456d280635b48d586a923bae6
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=5137cdc3c2dc45e60dadb5311fbfea66
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.ActualSetpoint"
+- Name: StartStop
+  Id: g=b7e800844ca56a0e98a9eacc462d02cc
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=37b1f8a90e132a9ef6fed000c7b4b71b
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.StartStop"
+- Name: Running
+  Id: g=2e0589770b51962e120a73e6479c1e4b
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=535f766a1c7486e466e46905e798d93c
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.Running"
+- Name: ActualPhase
+  Id: g=1834a7888e04947d88cf4643cffa99bc
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=b70b7324a5379757814b9ce625bca8b8
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.ActualPhase"
+- Name: ActualTemperature
+  Id: g=5f5be176355c8c12936f7f1c2c9fc14c
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Id: g=0d2996c89edc80033e654f50a764c1ed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.ActualTemperature"
+- Name: SpeedFanInput
+  Id: g=c5dd4861e110b0fd91f1dbc134b112ac
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=a7738c1a2f97ebe6fde0a3a4f72fda65
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.SpeedFanInput"
+- Name: SpeedFanOutput
+  Id: g=ce3b292d7a3604d97ba7656add271de8
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=229128bda6bd10f5de7e7840ce627e23
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.SpeedFanOutput"
+- Name: TimeToFinishPhase
+  Id: g=add3b0fb15ad5f97aff4835f3a7ca500
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=c572324790953b4962dc8ea8f0da5db1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.TimeToFinishPhase"
+- Name: TimeToFinishAll
+  Id: g=c490e937055968ace9dea9338dd0e843
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=2724a901d7c82e38059f321c433861c7
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.TimeToFinishAll"
+- Name: CycleNumber
+  Id: g=496ea6db1e26565cd58ebd58ee686e39
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=4f99edaa9249f9c348e32423b1a9313e
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.CycleNumber"
+- Name: TotEE
+  Id: g=5139251f8771232fc58311b014c4914c
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Id: g=ccd3de694ec419edfabdbc91456dc439
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.TotEE"
+- Name: TotLPG
+  Id: g=e78639f1fdc41d2284b9915ea8e81d68
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Id: g=436a719fa845ae7784422e78b874d8a3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.TotLPG"
+- Name: Preheating
+  Id: g=f017c874bf214f71c242609930657a1d
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=5881ac451a407217c9aa958e4aeaffd5
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.Preheating"
+- Name: SET_PreheatingTemperature
+  Id: g=ee139ac6bcdd48a8ee6e21bcd4e7a176
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=e754e4d7bd38689f04b5b07e72cc881f
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.SET_PreheatingTemperature"
+- Name: Gas
+  Id: g=df63999d07369bfccaca0eefcbfd5231
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Id: g=a88cfc3d78513ce589d45004d16cd14e
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.Gas"
+- Name: kWh
+  Id: g=94efb5c746cd8a651e61be72d8487656
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Id: g=85fd77c2989ce4f7af01687700ec3184
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.kWh"
+- Name: Direction
+  Id: g=95225e6df10095b63d9688d6dd60c211
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=18320dcaa446bed17e9c873fee09b10d
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.Direction"
+- Name: Init
+  Id: g=69f9066be40722f0917320fd52760f1d
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=982d438444d89bf4034533ea319f2413
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.Init"
+- Name: JobkWh
+  Id: g=7676205399e552dbed79a803a6fe6a24
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Id: g=e2ee50d158b408ccf6c68f759ac6863b
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.JobkWh"
+- Name: JobGas
+  Id: g=e4f56752895ffbb38df613f6b3f54c50
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Id: g=265f0604645b2b5d15ce2a28c29546b2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.JobGas"
+- Name: JobRecipe
+  Id: g=427948907040bc6ddf690eb583ac8343
+  Type: RAEtherNetIPTag
+  DataType: String
+  Value: ""
+  Children:
+  - Name: SymbolName
+    Id: g=2907142a5c2e60727b4c097e47d714b3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.JobRecipe"
+- Name: GasThrottle
+  Id: g=8a673d78f6cf17fee321c306662d762f
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Id: g=79799bedaa90f0b090fbcb9c77f44f80
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.GasThrottle"
+- Name: kW
+  Id: g=1d040edc9b575d24697aa16efe7eb788
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Id: g=10d3d33d5385d558c83178d67ea88491
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.kW"
+- Name: SET_SpeedFanInput_F
+  Id: g=976280d5f71f2f87fdb4625c6076d688
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [4]
+  Value: [0,0,0,0]
+  Children:
+  - Name: SymbolName
+    Id: g=809f43673a6d8c3f19b6f7a7a2987f32
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.SET_SpeedFanInput_F"
+- Name: SET_SpeedFanOutput_F
+  Id: g=6461b6ec99587ebf39a55f84d9e84535
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [4]
+  Value: [0,0,0,0]
+  Children:
+  - Name: SymbolName
+    Id: g=a844178a7bb5a4147974b8b4efb36c54
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.SET_SpeedFanOutput_F"
+- Name: SET_Duration_F
+  Id: g=898650172ed03749b7d03f13a1254b93
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [4]
+  Value: [0,0,0,0]
+  Children:
+  - Name: SymbolName
+    Id: g=dbe9f9e0d222f64ae704bc1f66d9b484
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.SET_Duration_F"
+- Name: SET_TemperatureSetpoint_F
+  Id: g=e4d2ec14b65c1adb2033f0b665340586
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [4]
+  Value: [0,0,0,0]
+  Children:
+  - Name: SymbolName
+    Id: g=387b2051f0c4c37e03e352e3400f6080
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.SET_TemperatureSetpoint_F"
+- Name: Tank1_ALMA
+  Id: g=f47a2ba363b215a55016b41014343ba5
+  Type: ALARM_ANALOG
+  DataType: ALARM_ANALOG
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "c0e4bc5d90a6f77166cbbe6a6554a184",
+     "Namespace": 40
+    },
+    "Body": {
+     "AckRequired": false,
+     "AckTime": 0,
+     "AlarmCountReset": false,
+     "AlarmCountResetTime": 0,
+     "AlarmLimitsInv": false,
+     "AnyInAlarmUnack": false,
+     "Commissioned": false,
+     "Deadband": 0.0,
+     "DeadbandInv": false,
+     "Disabled": false,
+     "EnableIn": false,
+     "EnableOut": false,
+     "HAcked": false,
+     "HAlarmCount": 0,
+     "HEnabled": false,
+     "HHAcked": false,
+     "HHAlarmCount": 0,
+     "HHEnabled": false,
+     "HHInAlarm": false,
+     "HHInAlarmTime": 0,
+     "HHInAlarmUnack": false,
+     "HHLimit": 0.0,
+     "HHMinDurationEnable": false,
+     "HHOperAck": false,
+     "HHOperShelve": false,
+     "HHOperUnshelve": false,
+     "HHProgAck": false,
+     "HHSeverity": 0,
+     "HHShelved": false,
+     "HInAlarm": false,
+     "HInAlarmTime": 0,
+     "HInAlarmUnack": false,
+     "HLimit": 0.0,
+     "HMinDurationEnable": false,
+     "HOperAck": false,
+     "HOperShelve": false,
+     "HOperUnshelve": false,
+     "HProgAck": false,
+     "HSeverity": 0,
+     "HShelved": false,
+     "In": 0.0,
+     "InAlarm": false,
+     "InFault": false,
+     "InFaulted": false,
+     "InstructFault": false,
+     "LAcked": false,
+     "LAlarmCount": 0,
+     "LEnabled": false,
+     "LInAlarm": false,
+     "LInAlarmTime": 0,
+     "LInAlarmUnack": false,
+     "LLAcked": false,
+     "LLAlarmCount": 0,
+     "LLEnabled": false,
+     "LLimit": 0.0,
+     "LLInAlarm": false,
+     "LLInAlarmTime": 0,
+     "LLInAlarmUnack": false,
+     "LLLimit": 0.0,
+     "LLMinDurationEnable": false,
+     "LLOperAck": false,
+     "LLOperShelve": false,
+     "LLOperUnshelve": false,
+     "LLProgAck": false,
+     "LLSeverity": 0,
+     "LLShelved": false,
+     "LMinDurationEnable": false,
+     "LOperAck": false,
+     "LOperShelve": false,
+     "LOperUnshelve": false,
+     "LProgAck": false,
+     "LSeverity": 0,
+     "LShelved": false,
+     "MaxShelveDuration": 0,
+     "MinDurationACC": 0,
+     "MinDurationPRE": 0,
+     "OperAckAll": false,
+     "OperDisable": false,
+     "OperEnable": false,
+     "OperSuppress": false,
+     "OperUnsuppress": false,
+     "ProgAckAll": false,
+     "ProgDisable": false,
+     "ProgEnable": false,
+     "ProgSuppress": false,
+     "ProgUnshelveAll": false,
+     "ProgUnsuppress": false,
+     "RetToNormalTime": 0,
+     "ROC": 0.0,
+     "ROCNegAcked": false,
+     "ROCNegAlarmCount": 0,
+     "ROCNegInAlarm": false,
+     "ROCNegInAlarmTime": 0,
+     "ROCNegInAlarmUnack": false,
+     "ROCNegLimit": 0.0,
+     "ROCNegLimitInv": false,
+     "ROCNegOperAck": false,
+     "ROCNegOperShelve": false,
+     "ROCNegOperUnshelve": false,
+     "ROCNegProgAck": false,
+     "ROCNegSeverity": 0,
+     "ROCNegShelved": false,
+     "ROCPeriod": 0.0,
+     "ROCPeriodInv": false,
+     "ROCPosAcked": false,
+     "ROCPosAlarmCount": 0,
+     "ROCPosInAlarm": false,
+     "ROCPosInAlarmTime": 0,
+     "ROCPosInAlarmUnack": false,
+     "ROCPosLimit": 0.0,
+     "ROCPosLimitInv": false,
+     "ROCPosOperAck": false,
+     "ROCPosOperShelve": false,
+     "ROCPosOperUnshelve": false,
+     "ROCPosProgAck": false,
+     "ROCPosSeverity": 0,
+     "ROCPosShelved": false,
+     "SeverityInv": false,
+     "ShelveDuration": 0,
+     "ShelveTime": 0,
+     "Status": 0,
+     "Suppressed": false,
+     "UnshelveTime": 0
+    }
+   }
+  Children:
+  - Name: AckRequired
+    Id: g=5bfc100828bce748be8a7892a4daf5d2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=ae7c08a0c13e7da378c08c349d92cce1
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.AckRequired"
+  - Name: AckTime
+    Id: g=d14fcc61759f5a97fe5b189e7fd374e8
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=fea24658601d349dcd87294888648a04
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.AckTime"
+  - Name: AlarmCountReset
+    Id: g=2ff04ad3991efbef795565f4be731386
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d149a9261e0dfaa28c674af7d8a54c91
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.AlarmCountReset"
+  - Name: AlarmCountResetTime
+    Id: g=49c6e9c29e339abd892ae95a2baaa151
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=2f5e1a39b0c541efd448560b16f4dd72
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.AlarmCountResetTime"
+  - Name: AlarmLimitsInv
+    Id: g=4130eade133ed35b019f96e0817b8025
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a581a958d4602130fdf1288f862fe913
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.AlarmLimitsInv"
+  - Name: AnyInAlarmUnack
+    Id: g=bb19dcf49c1ef981b04f79006ba96426
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=c77fd81d7ace0475f7e45150f4e16dac
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.AnyInAlarmUnack"
+  - Name: Commissioned
+    Id: g=2d3d92c99b2267e5763d2be511eede42
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a798d117b9e5fa16f9359ed3bef6895e
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.Commissioned"
+  - Name: Deadband
+    Id: g=e50255121b4f17872eda5836a971e20f
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=7719a82d0c3bf50dee5894c6d48114ae
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.Deadband"
+  - Name: DeadbandInv
+    Id: g=b3a9affc937ef6237e4f074d1e1474f3
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a28126bf07b999631fdd0bdad51d06ef
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.DeadbandInv"
+  - Name: Disabled
+    Id: g=93d648da5e1703fecd413d76eb9d9d28
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b58af39abe3b503cecdea73ad343f056
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.Disabled"
+  - Name: EnableIn
+    Id: g=a43592330cd70a5a1decc288263ae8c4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=63e459857a8944b6b43a088c5f45a79d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.EnableIn"
+  - Name: EnableOut
+    Id: g=617a6a8b5caf642b576418497cf29e62
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=bb0be537ed0c247c68445e8f6d0b736d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.EnableOut"
+  - Name: HAcked
+    Id: g=e466a3b2eaf9c2577f28bb6493a201f5
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=586f3d0c990c7d1231a6d2ffff3f15ee
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HAcked"
+  - Name: HAlarmCount
+    Id: g=618f5edc9b7ae719579864a43f7094e4
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=a46c038de7de32a898a8871ab62d70b8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HAlarmCount"
+  - Name: HEnabled
+    Id: g=51a3bafff3604e733ce3b6c0453939d0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=cd9856f06a03edcd7d27d887f54b4c42
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HEnabled"
+  - Name: HHAcked
+    Id: g=e3f1a2433591c64f1af717f4d66e5a16
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=f4e47bf8688f275abc10e3cea3704f29
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHAcked"
+  - Name: HHAlarmCount
+    Id: g=5b9291e89a5cd632a292196bc005d89f
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=a8585b7061c788e9b4c45510c90db137
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHAlarmCount"
+  - Name: HHEnabled
+    Id: g=47efc56b3312c36d48e9f3a6fb4a22af
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=cf7074755c71cabc9f01c850b337bb1a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHEnabled"
+  - Name: HHInAlarm
+    Id: g=4abaa02af7424b7a38edfcbc690c6f5f
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=51fe8c64dedf98fb75305d946a9e42b8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHInAlarm"
+  - Name: HHInAlarmTime
+    Id: g=99c90864fdc8ad603f11360f5e173686
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=0983776ab73013197b32fc39b14a73b4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHInAlarmTime"
+  - Name: HHInAlarmUnack
+    Id: g=ccdf53e1bc79d8ab1026c634b428654a
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=341b567de286467f5f781809502ab10f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHInAlarmUnack"
+  - Name: HHLimit
+    Id: g=a6667331d1028b18eb184f7cd6ee54d9
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=cc50a7a8c82805206d01592fce78fbf2
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHLimit"
+  - Name: HHMinDurationEnable
+    Id: g=bfd9056c1d1694a32cd3f90b9b03d818
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=89c0d58c17ee27ee7e8e0ec2ad30d2c6
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHMinDurationEnable"
+  - Name: HHOperAck
+    Id: g=2f9d5ea55279230666cc29df01407e94
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b4d10be63f6501dcb311fb8414172773
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHOperAck"
+  - Name: HHOperShelve
+    Id: g=88b133dc4c8c063e022464999d0c1917
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=0cd161576966884e4da73e5ffebf2d91
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHOperShelve"
+  - Name: HHOperUnshelve
+    Id: g=d87844d413fd62d02d15a7976e771252
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=9254d7ff072958ad0425bc757577faf4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHOperUnshelve"
+  - Name: HHProgAck
+    Id: g=2f35b29b07059a0cca5ae5cf88ff74e8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=33b52112ba649b437f93993ba7146529
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHProgAck"
+  - Name: HHSeverity
+    Id: g=fd296973fc9cdbace741331481070162
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=d3516882fce965b5ab29c0edd6756bc8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHSeverity"
+  - Name: HHShelved
+    Id: g=92d43c436067f3524cad070aa200c459
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a263acd87bc685f40b008217e08e768a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HHShelved"
+  - Name: HInAlarm
+    Id: g=193850824ff5ae9833b0c88b68cd9ac5
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=4a53275e18483e2d533ec1bea5253e1f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HInAlarm"
+  - Name: HInAlarmTime
+    Id: g=cda288e441333e2e0a121011f98c1082
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=b7d94d90518df1a05d7a361df3d42bbf
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HInAlarmTime"
+  - Name: HInAlarmUnack
+    Id: g=2f997fd21461fc438ad93e4d8e7b3c1a
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=dc4488ff631ae0c612b3ed73a5cab5ea
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HInAlarmUnack"
+  - Name: HLimit
+    Id: g=3cf31947797c232939d71ca69454c828
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=513cf59b07cafe1ac9bb5e4feddce61c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HLimit"
+  - Name: HMinDurationEnable
+    Id: g=e8ab88bc02927d27fa26561febd9bf76
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b923db11e8d800b348706ff6b8f9ac49
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HMinDurationEnable"
+  - Name: HOperAck
+    Id: g=8bead75595385450da9e896f4fc29c47
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=df40881608fda5d0316ee6e0ce70c9fd
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HOperAck"
+  - Name: HOperShelve
+    Id: g=a2ab5796e20cbada0f2d07bdf9d65421
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=f4065fd2112a59d309a29b6fc9256d16
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HOperShelve"
+  - Name: HOperUnshelve
+    Id: g=b0529a986e8525f7ae0b54d135429523
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=bddd109b000e42fd9ac4540924ad6c82
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HOperUnshelve"
+  - Name: HProgAck
+    Id: g=684d41faa3beb09e56398754f80e221a
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=7b692234d2ee79a935201d7f0208be2a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HProgAck"
+  - Name: HSeverity
+    Id: g=a68de54e93bf4b9e505703cdf30a1dc5
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=9ed7707c83764a27d7e2a01629e5a6f4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HSeverity"
+  - Name: HShelved
+    Id: g=c2bd0f88a682d4bad82661491f8cc532
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=11a6d0fa6770630aeef4463e70c81a97
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.HShelved"
+  - Name: In
+    Id: g=e634aed9fa6857791852e5ef7a551c4b
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=bea41c1b96aac7a388c0ce7ac30320db
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.In"
+  - Name: InAlarm
+    Id: g=99b2ddc59d09aa40e282fd43e02d1a70
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=338a334d49630107bb75d21db51b1683
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.InAlarm"
+  - Name: InFault
+    Id: g=d1420fbbdf674557abef4ca81db09cb0
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=3da0c6db73050073b5a941d3566d754a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.InFault"
+  - Name: InFaulted
+    Id: g=a8fe059148a0ab2c589553bfe6de4cf7
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=469d6566627fe6f6144571d40fe970d3
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.InFaulted"
+  - Name: InstructFault
+    Id: g=278f20a6ddd7576f67fdbc659bda17b2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=7a7d3710da3e89ad0843ee82fe4cfc74
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.InstructFault"
+  - Name: LAcked
+    Id: g=8b75a32eeda56fc7616db848c2f33455
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=64de129347399bb2cf615529825fa565
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LAcked"
+  - Name: LAlarmCount
+    Id: g=8c62cadbc8602b7c13066febe89f9fdc
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=15f7a716e17c038f7e1c8053b533dcda
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LAlarmCount"
+  - Name: LEnabled
+    Id: g=4f0bd8af8b8d182e2b5d14ccadc8f8b6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d40d32ec61c4d1aa82be591978c8abf2
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LEnabled"
+  - Name: LInAlarm
+    Id: g=1a331a125e7c31597ffbcc23d7a0e114
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=3e85fc8238a68e4f0b48b95ff58f2a0d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LInAlarm"
+  - Name: LInAlarmTime
+    Id: g=ac890a6a0bc1a7c7b2b6a5a3b4fb664a
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=eba95b9b633d2dcf5a63f88ede12d078
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LInAlarmTime"
+  - Name: LInAlarmUnack
+    Id: g=46de6ad474a8c3cef98266cb86985c0b
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=21a3c42308020639ad4eaa290de4f23b
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LInAlarmUnack"
+  - Name: LLAcked
+    Id: g=109ec23369dc2069d62027fcb97acf65
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=cfc552fbd320f851ba56f84e82f44040
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLAcked"
+  - Name: LLAlarmCount
+    Id: g=ec1cfdafec6039e195fdca8fd6801c8e
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=c6c7e20af54b6dc1bdafd8b919ae9176
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLAlarmCount"
+  - Name: LLEnabled
+    Id: g=3f4349339dc94557d0c6f6bda0158a33
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=4bea035ebe3d16b65b89d33833324a52
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLEnabled"
+  - Name: LLimit
+    Id: g=218c8f55ed9d4f98bd7e7f322ce78db9
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=e953c4d567ae6ecca8a5b852717e1377
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLimit"
+  - Name: LLInAlarm
+    Id: g=b63bdce30ff819e1c2aabdd0496f0c75
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=c10040cbcbca0d3cc583e9345f975a2c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLInAlarm"
+  - Name: LLInAlarmTime
+    Id: g=904ead84e8d7d7294ca84e9ceef5c822
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=61a8efe13cf083986aeacb746ddefde4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLInAlarmTime"
+  - Name: LLInAlarmUnack
+    Id: g=b15a47e44fc617dad591d6f571b65f23
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=2fddf39bc3b1b0d5feab0fecf04664fc
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLInAlarmUnack"
+  - Name: LLLimit
+    Id: g=2afeeea019be98ab4559bca09193b1c9
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=f28dff75a857075a0777ab972f42c346
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLLimit"
+  - Name: LLMinDurationEnable
+    Id: g=2585e23c4734a8e3c6be4467ccdd3807
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d6b019583b4888428daf524b99517e29
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLMinDurationEnable"
+  - Name: LLOperAck
+    Id: g=0c5956eb9393cf689ca2ee27bc1c7327
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=50a63ac35e5bd1460958d0a3f5b9ecf7
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLOperAck"
+  - Name: LLOperShelve
+    Id: g=b2a18ffce590909631da34418aeed5db
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=9030dfb6e6013921373d34d22bbc9b47
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLOperShelve"
+  - Name: LLOperUnshelve
+    Id: g=4724f542f097187aeba651f76b3b27fe
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=1856f59556a6ca9da0a9860646832ac8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLOperUnshelve"
+  - Name: LLProgAck
+    Id: g=172a2321e4e6305ba13c97f4f94621ba
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a31d22a9462de1e3677cf1fb909aa55e
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLProgAck"
+  - Name: LLSeverity
+    Id: g=3487ea80bd73d62ed0c26c0ceacba37e
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=fcb0bd7be5026cf7194a496c2e74bbbf
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLSeverity"
+  - Name: LLShelved
+    Id: g=3e6f9004d721a86d0d96568d42b5fc06
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=ec601568e7b0b2143571b9fb1432eb1b
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LLShelved"
+  - Name: LMinDurationEnable
+    Id: g=2fac3f9ac677c6fa4fd49f2d55a2e717
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d559fc201bf18b38322d4eef609ac248
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LMinDurationEnable"
+  - Name: LOperAck
+    Id: g=18f24efa9add7797d98697da0f9d761b
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a6920d5e308071195daaba6666e01e50
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LOperAck"
+  - Name: LOperShelve
+    Id: g=3c61b453d25f0bb704b03364ff265912
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=094fce9ec8f6f28493dd012851849dfe
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LOperShelve"
+  - Name: LOperUnshelve
+    Id: g=a5abacf980ae89c9f8bacac56809b351
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=ee77ebd2a094837f94d1f9cbf850f534
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LOperUnshelve"
+  - Name: LProgAck
+    Id: g=ed1bc88aa59c6c7201a30f9ec633242d
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b39c509a5659a03ea3d1d72d3c15b099
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LProgAck"
+  - Name: LSeverity
+    Id: g=df2109ed6c9c6ed3b437c221e141bf19
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=277f32317b9880bedc26a3d4e90616ff
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LSeverity"
+  - Name: LShelved
+    Id: g=a6f1e25668c254a7dbad63634130f1af
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b36e1a1f580c5af508834b405f512a10
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.LShelved"
+  - Name: MaxShelveDuration
+    Id: g=e06d6c079b1712fafa95dcf78140bce3
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=77e5901ddcdb31dceb742240ae43c784
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.MaxShelveDuration"
+  - Name: MinDurationACC
+    Id: g=fb3fcccdfb3f15094f0d4405bf4b1f77
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=5cd8112b4ed449aada9640b10871a90e
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.MinDurationACC"
+  - Name: MinDurationPRE
+    Id: g=b4fa22827266b42ec8bf0a82de911984
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=0ede8814ce65702bd44c280ef9b0c913
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.MinDurationPRE"
+  - Name: OperAckAll
+    Id: g=7dd0f1f5b50f8b9a8d8734baca96dcf9
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=b1eff22d280e6c22177cfdafba1ba8e6
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.OperAckAll"
+  - Name: OperDisable
+    Id: g=1f5b4f03451328b33435073ffc0691e6
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=c5c010c04288dc8d254200232103734d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.OperDisable"
+  - Name: OperEnable
+    Id: g=ecfb4aa16792e1de99f852bb2de95819
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=413b6b3442515b196b2a41a310c6d545
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.OperEnable"
+  - Name: OperSuppress
+    Id: g=ba5b0fc1699a0f304b9266fe70b12e15
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=862929ff8f36b48dcab9b5a5bdc0b5bc
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.OperSuppress"
+  - Name: OperUnsuppress
+    Id: g=e3bc7735bb11d86c723d8fbe1f368ee9
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=52e2715cdc5f3936ba1f9f2187d0ad2b
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.OperUnsuppress"
+  - Name: ProgAckAll
+    Id: g=7190d7ae1a4f39eb775d1dfb2429e29b
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=8599628e0eb762e8a76857cf32efd859
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ProgAckAll"
+  - Name: ProgDisable
+    Id: g=197c2760452f9837a78221414f3a1a4f
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=1f2b42a2110bb8eda39cd3fbac20521c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ProgDisable"
+  - Name: ProgEnable
+    Id: g=11b511ea1f4974dd01b427666f47c512
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=0488a89b6998cb7312b8a162e8b247cd
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ProgEnable"
+  - Name: ProgSuppress
+    Id: g=1905dfcd7fbbe33c14b2465c25bc90f2
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=8ad67946b0f119c6c62e3e97e47e5220
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ProgSuppress"
+  - Name: ProgUnshelveAll
+    Id: g=ff59c04151d6e92f836008bc70163e76
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=4cb42b2c13c445d70033a996d7e84d72
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ProgUnshelveAll"
+  - Name: ProgUnsuppress
+    Id: g=7ac6c9a828a7e5ac2210d8ec9cefbd45
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=f1d6cbd213ebce27bc3d3eb3cd80d92f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ProgUnsuppress"
+  - Name: RetToNormalTime
+    Id: g=dde728088e996fea5a2c5b14b8b50f0a
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=7bc274e45f573b449dc130e2b3897cff
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.RetToNormalTime"
+  - Name: ROC
+    Id: g=6b883d7a24e85ebfae36be82f72a8985
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=64f86e616817b4f238aac460030ce401
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROC"
+  - Name: ROCNegAcked
+    Id: g=2b015bf64b15da9d80fd333de414ee06
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=5cc44516f3730ba2bc63ca035ec82554
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegAcked"
+  - Name: ROCNegAlarmCount
+    Id: g=51e2c2f38de4b140345db0dff377566e
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=95b47e6f5193859af824a778d9d2ee36
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegAlarmCount"
+  - Name: ROCNegInAlarm
+    Id: g=61d1687e75c70d6d93a5d36aa2f30aea
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=e76adb09d58aa01c2a58c141e9080032
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegInAlarm"
+  - Name: ROCNegInAlarmTime
+    Id: g=e06057667d0dec62cef832604fac919c
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=0259cc6fb4be0623232833f84c0ee70a
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegInAlarmTime"
+  - Name: ROCNegInAlarmUnack
+    Id: g=9725bc9e66457eb3cfbdd646031124ea
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=28c5d0dc2c1706121c0b4a8f9ab60617
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegInAlarmUnack"
+  - Name: ROCNegLimit
+    Id: g=37ea41451f8e9e0618dd87cd5be65ac6
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=4e26f20158edb775899cfc0cd410f0e7
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegLimit"
+  - Name: ROCNegLimitInv
+    Id: g=8cf615ad59730cedcf022b49c52b1060
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=ca30f135edbe0b0b6ac4b45427f44b60
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegLimitInv"
+  - Name: ROCNegOperAck
+    Id: g=0b6a455aa00f001d1a70ada5a4865c27
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d2a38dd783d33b73578fa785d4092995
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegOperAck"
+  - Name: ROCNegOperShelve
+    Id: g=bd54bf2947679dd55434fbfe82eabe61
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=3879ebb65a9a7089786df5b5eb044539
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegOperShelve"
+  - Name: ROCNegOperUnshelve
+    Id: g=164e7a4efb6f166dfadc6c5437e9af05
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=5a77a8c79fcffe22e01d6161010f1426
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegOperUnshelve"
+  - Name: ROCNegProgAck
+    Id: g=f3859d593b8d53fb2e238db586c165c9
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=ad2c35e37bb454475836fb776bd32c06
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegProgAck"
+  - Name: ROCNegSeverity
+    Id: g=39b07c1e5c25581c090463b1acd25825
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=61fe98041b005a8535b5e004f430965f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegSeverity"
+  - Name: ROCNegShelved
+    Id: g=48d436909de0fbf6856b201dbd3c5655
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=cf802fb0507eb400f4a7415ed6a4abc0
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCNegShelved"
+  - Name: ROCPeriod
+    Id: g=1369ad3231f5217a7650688c4910870d
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=a441eefb29325b3e20a93b1138cd7060
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPeriod"
+  - Name: ROCPeriodInv
+    Id: g=d364c149d38da0c6286896f41dff0446
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=baf0a63c9b5b982088025cf1ff5fe668
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPeriodInv"
+  - Name: ROCPosAcked
+    Id: g=77dd20390190c394f1c59711e5c1d7a4
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=cace067733f292ce9a18d9af45365668
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosAcked"
+  - Name: ROCPosAlarmCount
+    Id: g=ec54563dde7b797d6e7f1b88d40f9d80
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=fc237b558652f7b06ef25039eda33840
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosAlarmCount"
+  - Name: ROCPosInAlarm
+    Id: g=d77fff0ba090758c4a95515316d24500
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=e3f4f706362c610cd18ab651695aec8c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosInAlarm"
+  - Name: ROCPosInAlarmTime
+    Id: g=20fea06a1108b14183bbd0ba5d0108f2
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=e8d69c667440612be738932355a1598c
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosInAlarmTime"
+  - Name: ROCPosInAlarmUnack
+    Id: g=5392d928133906052ec412735cd91be5
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=ff02b79438c4bda68b7c9be324f85879
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosInAlarmUnack"
+  - Name: ROCPosLimit
+    Id: g=d0c78dda08accc0e846aac844f547836
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=1109a014de115d28a2b39ab05c098fd2
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosLimit"
+  - Name: ROCPosLimitInv
+    Id: g=b86d68d413b70cc2c2c3812048e775fb
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=97aac74b637befad9829ca60567e3876
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosLimitInv"
+  - Name: ROCPosOperAck
+    Id: g=4df6b99e9120bd67545f0d5ffd95ba99
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=26b2c172c17a499d98b7bcdabf26b3a2
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosOperAck"
+  - Name: ROCPosOperShelve
+    Id: g=89a74cd5c729244152bc19939481d112
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=e29a25153fe3b712a8e27c89884614f4
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosOperShelve"
+  - Name: ROCPosOperUnshelve
+    Id: g=b48b1208c1e6ee3195eb7995b0fc48ad
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=2ae48e6af334903b09b832ee16981f8f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosOperUnshelve"
+  - Name: ROCPosProgAck
+    Id: g=28294dd84f4a31f78b178f1833e558cf
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=f251b980d2a3add45e49e69cf2942707
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosProgAck"
+  - Name: ROCPosSeverity
+    Id: g=f4bd0505b066a27b3f92ab0c6db72779
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=a9bcd795f8d84e04ee52b08919a0a3f5
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosSeverity"
+  - Name: ROCPosShelved
+    Id: g=7be428862c6747a8e06e1a168b3c4d50
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=812895e79337e827d52be18d81408609
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ROCPosShelved"
+  - Name: SeverityInv
+    Id: g=621181642d09e7255f61dc0304bd6847
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=8497ebf8d29f4e48c0c54332077eaec8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.SeverityInv"
+  - Name: ShelveDuration
+    Id: g=446d19fd9dd8fea2dbeef5c75da7c5ac
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=3ad3850f358d8e38eead0c8a68cc641b
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ShelveDuration"
+  - Name: ShelveTime
+    Id: g=26e76128a3a4e1d941a608f6323908b1
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=e60fdb011705bde36f021a7ae4565f81
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.ShelveTime"
+  - Name: Status
+    Id: g=330e71156f4bdf03c6c7e4b657c32864
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=9bd01e1c054e2a19c7269206c4bd608f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.Status"
+  - Name: Suppressed
+    Id: g=473e034a1f95c801e0614176e8d53808
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=7bb7d1d5334dcf8fdd4db6397c9534fc
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.Suppressed"
+  - Name: UnshelveTime
+    Id: g=fed7d3c8fd096b58e1fcd6e035b59bc2
+    Type: RAEtherNetIPTag
+    DataType: Int64
+    Value: 0
+    Children:
+    - Name: SymbolName
+      Id: g=b208b78125a7f5c5a6831ae3698159f5
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:OvenDemo.Tank1_ALMA.UnshelveTime"
+- Name: Tank1AlarmOn
+  Id: g=b4eca3b0949d7292ea0d92f02e0d0c71
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=b6d349244f33d7599c5a826b1f7d07f9
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.Tank1AlarmOn"
+- Name: Tank2AlarmOn
+  Id: g=426406fdebf55dac6b95830a9da3a512
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=5dda86d9c8960b86cf3f2ec1abaaa8fa
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:OvenDemo.Tank2AlarmOn"

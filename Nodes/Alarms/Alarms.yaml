@@ -303,3 +303,95 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 10
+- Name: T1001.Tank1.Alarm
+  Id: g=1f3597d94542d295657e52ba9288de37
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=afd4fed735d370cb992008fb2859986f
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=855db3294b2891bba4ffdb8a39925319
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=0ebbbb75a6f822cb477586cf308d5592
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/EthernetIPDriver/LogixStation/Tags/Program&:OvenDemo/Tank1AlarmOn"
+      Children:
+      - Name: Mode
+        Id: g=7afcb26e56f79ad348c81755a87b8183
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=dd3d8f62bcd9d08e4fcefde3590b7352
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=77f23f155bb7400943b0765818a9feb8
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"L1001 - Warning: Tank 1 Level Alarm"}
+- Name: T1002.Tank2.Alarm
+  Id: g=9ff2442d94cb31d4db63f4a45a8c72f7
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=22d03fad1f72180b4129d683af5ebbd7
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=135bf5cc16bcdad83c5de9aaccb8738c
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=12d75152b449a57c64a7e5cc019f7857
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/EthernetIPDriver/LogixStation/Tags/Program&:OvenDemo/Tank2AlarmOn"
+      Children:
+      - Name: Mode
+        Id: g=66dafe6958d1b638cabf34c67de40332
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=f9035e82ac0bf34bdb0cc71e6763d3d4
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Name: Message
+    Id: g=a2aa35787041ab68652503c6fb3fd99b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"L1002 - Warning: Tank 2 Level Alarm"}

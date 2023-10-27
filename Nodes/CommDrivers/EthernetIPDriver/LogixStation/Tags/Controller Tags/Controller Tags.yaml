@@ -1,0 +1,583 @@
+Name: Controller Tags
+Id: g=fed1c40af521bf5579aa9ed6629658da
+Type: FolderType
+Children:
+- Name: Tank2
+  Id: g=06e7064cbec790fa15f8d69e0b255842
+  Type: TankUDT
+  DataType: TankUDT
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "1b6a5e285e1ffd78f8831ced07762be2",
+     "Namespace": 40
+    },
+    "Body": {
+     "Level": 0.0,
+     "SetPoint": 0.0,
+     "ValveInCmd": false,
+     "ValveInStatus": false,
+     "ValveOutCmd": false,
+     "ValveOutStatus": false
+    }
+   }
+  Children:
+  - Name: ValveInStatus
+    Id: g=98f4075afac9c1bffcf30fba11c30dc8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=c054fd94bc86f28615d097041626f137
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank2.ValveInStatus"
+  - Name: ValveInCmd
+    Id: g=f550a61f698b7994a47be032331e37bf
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=a8dbc77727faed968514d84a24404e03
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank2.ValveInCmd"
+  - Name: ValveOutStatus
+    Id: g=1b5dd228b67a43a8327774bde571ec08
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=64a74a383d90fe064eb34fbc6cd11b75
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank2.ValveOutStatus"
+  - Name: ValveOutCmd
+    Id: g=73e5733bc8571e737cc598345534e3db
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=4c8688524b8d37c33c6f156205182743
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank2.ValveOutCmd"
+  - Name: Level
+    Id: g=a0943dc4183ccecbca2ca92f3273a2c7
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=b81d5ddcf8d9aa03aa14e9ef3fb4e6e1
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank2.Level"
+  - Name: SetPoint
+    Id: g=f388a69594005a24d0e9fb4905e4f24c
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=73f3244966421c633cdb3d8798022939
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank2.SetPoint"
+- Name: Motors
+  Id: g=db631f047878db8258d2b2b59b7f4e1b
+  Type: Motor
+  DataType: Motor
+  ValueRank: OneDimension
+  ArrayDimensions: [5]
+  Value: [{"TypeId":{"IdType":2,"Id":"0f05a08bc99d10e907f479afeb076c54","Namespace":40},"Body":{"CmdOffOn":false,"Power":0.0,"SetSpeed":0,"Speed":0,"Status":false}},{"TypeId":{"IdType":2,"Id":"0f05a08bc99d10e907f479afeb076c54","Namespace":40},"Body":{"CmdOffOn":false,"Power":0.0,"SetSpeed":0,"Speed":0,"Status":false}},{"TypeId":{"IdType":2,"Id":"0f05a08bc99d10e907f479afeb076c54","Namespace":40},"Body":{"CmdOffOn":false,"Power":0.0,"SetSpeed":0,"Speed":0,"Status":false}},{"TypeId":{"IdType":2,"Id":"0f05a08bc99d10e907f479afeb076c54","Namespace":40},"Body":{"CmdOffOn":false,"Power":0.0,"SetSpeed":0,"Speed":0,"Status":false}},{"TypeId":{"IdType":2,"Id":"0f05a08bc99d10e907f479afeb076c54","Namespace":40},"Body":{"CmdOffOn":false,"Power":0.0,"SetSpeed":0,"Speed":0,"Status":false}}]
+  Children:
+  - Name: 0
+    Id: g=6baca24e6a4cadf81edd0751faf71967
+    Type: Motor
+    DataType: Motor
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "0f05a08bc99d10e907f479afeb076c54",
+       "Namespace": 40
+      },
+      "Body": {
+       "CmdOffOn": false,
+       "Power": 0.0,
+       "SetSpeed": 0,
+       "Speed": 0,
+       "Status": false
+      }
+     }
+    Children:
+    - Name: CmdOffOn
+      Id: g=bf746ce5a1b530dc379c6725f52bbec1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1a47baa6ff0fa1e5f049f6768205158e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[0].CmdOffOn"
+    - Name: Power
+      Id: g=36c7d737e132fd63c526c7ad891354c6
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=d3d9d563a736352219bc3320d336bb7f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[0].Power"
+    - Name: SetSpeed
+      Id: g=84bc1f38a2d2feb901121384743a4b75
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=1217bd023a40448b13f9d89bdda23e58
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[0].SetSpeed"
+    - Name: Speed
+      Id: g=d8a9c97689ab744ac621e7c26d920074
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=2f7cd9cf932efd934703e2b497282ebf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[0].Speed"
+    - Name: Status
+      Id: g=c92b5bd12723bb6b00bf809e498a89ce
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7a8b579b8bb4085410e583ceea73b125
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[0].Status"
+  - Name: 1
+    Id: g=218d0177009a7442be273262ad7244f9
+    Type: Motor
+    DataType: Motor
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "0f05a08bc99d10e907f479afeb076c54",
+       "Namespace": 40
+      },
+      "Body": {
+       "CmdOffOn": false,
+       "Power": 0.0,
+       "SetSpeed": 0,
+       "Speed": 0,
+       "Status": false
+      }
+     }
+    Children:
+    - Name: CmdOffOn
+      Id: g=3aac0fea369c1f91f6f7e0616e9db433
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f4e10ef186aaa23400b98ba5e99a1117
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[1].CmdOffOn"
+    - Name: Power
+      Id: g=87362567b8a07389657028b90c1b9919
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=526806f35e24d3d98f5a94da8884dcbd
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[1].Power"
+    - Name: SetSpeed
+      Id: g=463f90507a053e00a1a5952674b01610
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=a9d1324f82ffee0bbb0bf9c2abbe668a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[1].SetSpeed"
+    - Name: Speed
+      Id: g=b67442cc87e68cbabdf77409081ea149
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=29ad1ef15f360c6a6748a4c3d0e14cb3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[1].Speed"
+    - Name: Status
+      Id: g=3229a63341ae2592dae1448579d6f8d6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=9dfd448b40f7ab2bb014bd5909db65d8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[1].Status"
+  - Name: 2
+    Id: g=c0b990d73f4b6991178e1ae6b882457a
+    Type: Motor
+    DataType: Motor
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "0f05a08bc99d10e907f479afeb076c54",
+       "Namespace": 40
+      },
+      "Body": {
+       "CmdOffOn": false,
+       "Power": 0.0,
+       "SetSpeed": 0,
+       "Speed": 0,
+       "Status": false
+      }
+     }
+    Children:
+    - Name: CmdOffOn
+      Id: g=3693822654821b8d2a09da301a6c1bfd
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=06963d977a6be29cebb0fd9d959d75df
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[2].CmdOffOn"
+    - Name: Power
+      Id: g=60189a617ffc64d90015799e442bbaf9
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=626e7c3d977a4e8c1abf08475cb36d96
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[2].Power"
+    - Name: SetSpeed
+      Id: g=8235e8326b603999641a5879163f90aa
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=1a54c1349cf928fce5b93320488eeabb
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[2].SetSpeed"
+    - Name: Speed
+      Id: g=b678e72b44c3ed4d8b6a093af48c749a
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=8dafcafb7f4a05babf7b96e7cadf0592
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[2].Speed"
+    - Name: Status
+      Id: g=c13f7b94db6d491ee9ddd091a96d08cc
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8efa2d4e3c02da8d8cdb67f37b217d00
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[2].Status"
+  - Name: 3
+    Id: g=0a52b69c4ef8e1073c6512ca0750eaad
+    Type: Motor
+    DataType: Motor
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "0f05a08bc99d10e907f479afeb076c54",
+       "Namespace": 40
+      },
+      "Body": {
+       "CmdOffOn": false,
+       "Power": 0.0,
+       "SetSpeed": 0,
+       "Speed": 0,
+       "Status": false
+      }
+     }
+    Children:
+    - Name: CmdOffOn
+      Id: g=6513b5c4c281f3b8c0e6cf880f15755f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=2ff82e5aa06a818aabfa9c27d36b8c0a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[3].CmdOffOn"
+    - Name: Power
+      Id: g=db74c49ebff854c6d5f22e080dcaaaf4
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=c7e520b49bcb22efb042695d5c3fa50d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[3].Power"
+    - Name: SetSpeed
+      Id: g=89c31b423c6c8f1f71a144b541aa74f5
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=6959d1aac14404abbd479de898d963e1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[3].SetSpeed"
+    - Name: Speed
+      Id: g=7de686936b79beb55e5e82585b63f72a
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=4585a04f8b3117a1cb6c9fa52496ba60
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[3].Speed"
+    - Name: Status
+      Id: g=f8b8cb249570437114ae638ea1939cc7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=92e63f5a4d960377f28757e1014500fc
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[3].Status"
+  - Name: 4
+    Id: g=79f356f5aed93e455d06a2ccad559474
+    Type: Motor
+    DataType: Motor
+    Value: 
+     {
+      "TypeId": {
+       "IdType": 2,
+       "Id": "0f05a08bc99d10e907f479afeb076c54",
+       "Namespace": 40
+      },
+      "Body": {
+       "CmdOffOn": false,
+       "Power": 0.0,
+       "SetSpeed": 0,
+       "Speed": 0,
+       "Status": false
+      }
+     }
+    Children:
+    - Name: CmdOffOn
+      Id: g=e882a6fc578576b9f1ee697a9e921fa5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=122e3080e4eccac72dd2e1476e3c4830
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[4].CmdOffOn"
+    - Name: Power
+      Id: g=5f0924641719eb09e5e9cda9c365e659
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=563bd1516ccb9692d28ce57e2afe559a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[4].Power"
+    - Name: SetSpeed
+      Id: g=7ff50734f63dcb37ad1fec198ca8bfbd
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=7e37c8d2ab15d734a32fb4470fa345ff
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[4].SetSpeed"
+    - Name: Speed
+      Id: g=c07db61356e605eef6fb323a595131ee
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=c93e33d8f7357d5a63bad088cf395110
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[4].Speed"
+    - Name: Status
+      Id: g=dd2f77ee431bd1804529ac1c3a363ef5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=910ccac8471eb9f0fa80ae07aee82256
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Motors[4].Status"
+- Name: Tank1
+  Id: g=5ed6d8ecd346fbfcaf01c17521dd51ab
+  Type: TankUDT
+  DataType: TankUDT
+  Value: 
+   {
+    "TypeId": {
+     "IdType": 2,
+     "Id": "1b6a5e285e1ffd78f8831ced07762be2",
+     "Namespace": 40
+    },
+    "Body": {
+     "Level": 0.0,
+     "SetPoint": 0.0,
+     "ValveInCmd": false,
+     "ValveInStatus": false,
+     "ValveOutCmd": false,
+     "ValveOutStatus": false
+    }
+   }
+  Children:
+  - Name: ValveInStatus
+    Id: g=2590ef0a6bb3b3f3203c20ce12fa5238
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=d888bf9d60fd6654ae740cb8bbfc576f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank1.ValveInStatus"
+  - Name: ValveInCmd
+    Id: g=f9f4dad64f41fc379851257b53b3e8d8
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=6ee9ea755375ec77e3df0498a534d56d
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank1.ValveInCmd"
+  - Name: ValveOutStatus
+    Id: g=fc1c6b92d4795e614d6a04a87958be56
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=feb1c311ad6be20fe84ab121b58f9887
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank1.ValveOutStatus"
+  - Name: ValveOutCmd
+    Id: g=e7b0d1d1c953aa6ec24c45bde647e97c
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: SymbolName
+      Id: g=077bed5857e46f704d43a0968e9d06f7
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank1.ValveOutCmd"
+  - Name: Level
+    Id: g=4790960d0b3b78bf58cdf9a4939af9ef
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=baa32b58e831ca9061376c452a6442ea
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank1.Level"
+  - Name: SetPoint
+    Id: g=78f2347e213743a5052f33831e58dc7c
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: SymbolName
+      Id: g=f26f9b476e937a739aeb370e34a5c9c8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Tank1.SetPoint"
+- Name: TestBoolTag
+  Id: g=958cce4e16851faf8c02796805a7a412
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Id: g=69ab1dee74d9c9fcbf8b7463ab4a8c8e
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "TestBoolTag"
+- Name: TestIncrementTag
+  Id: g=7e7f3f0906b010e6975ccf446ea6e1c7
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Id: g=9675bd07d6c5bb334f22ecda3a261c65
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "TestIncrementTag"
