@@ -13,7 +13,7 @@ There are multiple ways to download this project, here are two of them:
 6. Click `Open` button in bottom right corner to start cloning process
 
 ### Download ZIP
-The Download ZIP button provided bi GitHub may not work as intended, please download the zip from the `Release` section
+The Download ZIP button provided bi GitHub may be used to download a .zip copy of the repository.
 
 ## Preparing the demo
 1. Download, install, and run the OPC-UA Server from the link above on the same computer hosting your FactoryTalk Optix application. The OPC UA ANSI C Demo Server is what is used for this project.
