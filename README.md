@@ -1,5 +1,5 @@
 # Boiler Demo
-This demo was developed to demonstrate an alarm click in FactoryTalk® Optix pulling up a rung of code in Studio 5000 Logix Designer® using ThinManager® Logix PinPoint. This will connect via OPC-UA to the demo server provided by the UA Foundation [link](https://www.unified-automation.com/downloads/opc-ua-servers.html) and a Rockwell PLC running the Boiler Demo code that can be found in `ProjectFiles\LogixCode`
+This demo was developed to demonstrate an alarm click in FactoryTalk® Optix pulling up a rung of code in Studio 5000 Logix Designer® using ThinManager® Logix PinPoint. This will connect via OPC-UA to the demo server provided by the UA Foundation [link](https://www.unified-automation.com/downloads/opc-ua-servers.html), choosing **OPC UA ANSI C Demo Server (Windows)**, and a Rockwell PLC running the Boiler Demo code that can be found in `ProjectFiles\LogixCode`
 
 ## Cloning the repository
 There are multiple ways to download this project, here are two of them:
