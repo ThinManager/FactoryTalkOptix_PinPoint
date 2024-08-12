@@ -21,3 +21,15 @@ The Download ZIP button provided bi GitHub may be used to download a .zip copy o
 3. Create a PinPoint Event in the ThinManager server that executes on a specific terminal (event type will be set to PinPoint, target terminal must be specified).
 4. Generate an API key from the ThinManaager server with the appropriate permissions to connect to the server and execute a ThinManager Event.
 5. Modify the example code in the TMLogixPinPoint.cs file to use the updated API key for the "x-api-key" header and also update the IP Address of the ThinManager server in the url_ variable.
+
+## Disclaimer
+
+Rockwell Automation maintains these repositories as a convenience to you and other users. Rockwell Automation reserves the right at any time and for any reason to refuse access, to edit, or remove content from this Repository. You acknowledge and agree to accept sole responsibility and liability for any Repository content posted, transmitted, downloaded, or used by you. Rockwell Automation has no obligation to monitor or update Repository content
+
+The examples provided are to be used as a reference for building your own application and should not be used in production as-is. It is recommended to adapt the example code based on your project/needs while observing the highest quality and safety standards.
+
+The following list, while not inclusive, are pieces of software that require a paid license or subcription to run in production:
+- ThinManager
+- ThinManager Logix PinPoint
+- FactoryTalk® Optix
+- FactoryTalk® View SE
